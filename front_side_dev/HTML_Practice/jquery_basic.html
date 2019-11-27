@@ -1,0 +1,221 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+    <div class="div1 outter">in the div1</div>
+    <div class="outter1">outer
+        <div class="inner">inner</div>
+        <p class="innerp1">inner p</p>
+        <p class="innerp2">inner p</p>
+    </div>
+    <p id="p1" class="p1" name="p1">in the p</p>
+    <input type="text" />
+    <input type="password"/>
+
+    <script src="jspLibs/jquery-1.12.4.js"></script>
+    <script>
+        //jquery标签的基本选择器
+        $('.div1').css('color','red');
+        $('*').css('color','red');
+        $('#p1').css('color','red');
+        $('div').css('backgroundColor','green')
+
+        //层级选择器
+        $('.outter p').css('color','red'); //子代选择器
+        $('.outter1+p').css('color','red'); //毗邻选择器，必须紧接着
+        $('.outter1~p').css('color','red'); //毗邻选择器，不用紧接着
+
+        //基本筛选器
+        $('ul li:first').css('color','red'); //选择第一个
+        $('ul li:last').css('color','red'); //选择最后一个
+        $('ul li:eq(2)').css('color','red'); //选择其中任意一个
+        $('ul li:odd').css('color','red'); //选择奇数
+        $('ul li:even').css('color','red'); //选择偶数
+        $('ul li:gt(2)').css('color','red'); //选择大于的
+        $('ul li:lt(2)').css('color','red'); //选择小于的
+
+        //属性选择器
+        $('[name="p1"][id="p1"]').css('fontSize','30px');//可以通过多个属性定位标签
+
+        //表单选择器,只有input标签的type属性可以这么简写
+        $('input[type="text"]').css('width','500px');
+        $(':password').css('width','400px');
+
+        //另一种选择器
+        $('li').eq(0).css('color','red');
+        $('li').first().css('color','red');
+        $('li').last().css('color','red');
+
+        //查找筛选器
+        $('.inner3').children('p').css('color','red'); //只查找儿子这一层的所有p标签
+        $('.inner3').find('p').css('color','red'); //找其内部的所有p标签
+
+        $('li').eq(0).next().css('color','red'); //紧接着他的下一个
+        $('li').eq(0).nextAll().css('color','red'); //后面的所有标签
+        $('li').eq(0).nextUntil('#end').css('color','red'); //后面的到end之前的标签
+
+        $('li').eq(0).prev().css('color','red'); //紧接着他的上一个
+        $('li').eq(0).prevAll().css('color','red'); //紧接着他的上一个
+        $('li').eq(0).prevUntil('#start').css('color','red'); //紧接着他的上一个
+
+        $('.outer1 .inner3 p').parent().html(); //查找其父标签
+        $('.outer1 .inner3 p').parents(); //查找其所有的外层标签
+        $('.outer1 .inner3 p').parentsUntil('body'); //查找其所有的外层标签,直到body标签这一层
+
+        $('.outter').siblings(); //查找该标签的所有同级别标签
+
+        $('.outter').attr('con') //可以获取自定义属性的值
+        $('.outter').prop('con') //获取固有属性的值
+
+        $('.outter').attr('con','c2') //可以设置自定义属性的值
+        $('.outter').prop('con','c2') //设置固有属性的值
+
+        $('.outter').hasClass('hide') //判断标签是不是有这个类属性
+        $('.outter').addClass('hide') //添加一个类属性
+        $('.outter').removeClass('hide') //删除类属性
+
+        $('.inner').html() //获取标签的文本内容
+        $('.inner').html('<h1>test html</h1>') //设置标签的内容
+
+        $('.inner').text() //获取标签的文本内容
+        $('.inner').text('test html') //设置标签的文本内容
+
+        $('.inner').val() //获取标签的value值，只有获取固有的属性的值，自定义的不行
+        $('.inner').val('123') //修改固有的value属性的值，自定义的不行
+
+        $('#msg').html() == $('#msg')[0].innerHTML //jquery转换为DOM对象
+
+
+        //遍历方法
+        var arr = [11,22,33];
+        $.each(arr,function (x,y) {
+            console.log(x); //遍历数组下标
+            console.log(y); //遍历数组值
+        })
+
+        $('p').each(function () {
+            console.log($(this)); //遍历找到的所有的标签
+        })
+
+
+        //jquery创建对象
+        var $ele = $("<h1></h1>");
+        $ele.html('hahaha')
+        $ele.css('color','red')
+        $('.c1').append($ele) //在标签内添加标签
+        $ele.appendTo('.c1') //子标签添加到哪个父标签内
+
+        $('.c1').prepend($ele) //在标签内，最前面添加标签
+        $ele.prependTo('.c1') //子标签添加到哪个父标签内的前面
+
+        $('.c1').after($ele) //在标签前面插入一个标签
+        $ele.insertAfter('.c1')
+
+        $('.c1').before($ele) //在标签后面插入一个标签
+        $ele.insertBefore('.c1')
+
+        $('p').replaceWith($ele) //替换当前找到的标签
+
+        $('.c1').empty() //清空标签的内容
+        $('.c1').remove() //删除标签
+
+        var $cele = $(this).clone() //复制当前这一个标签
+        $('.c1').after($cele)
+
+
+        //css相关信息操作
+        $('.c1').css('color','red');
+
+        $('.c1').offset().top //取得标签相对于当前视图的偏移量
+        $('.c1').offset().left //取得标签相对于当前视图的偏移量
+
+        $('.c1').position().left //相对于已经定位的父标签的偏移量
+        $('.c1').position().top //相对于已经定位的父标签的偏移量
+
+        $('.c1').height() //获取标签本体的高度
+        $('.c1').height("100px") //修改标签本体的高度
+        $('.c1').innerHeight() //包括padding的高度
+        $('.c1').outerHeight() //包括边框的高度
+        $('.c1').outerHeight(ture) //包括margin的高度
+
+
+        //获取窗口的滑动事件
+        window.onscroll = function () {
+            console.log($(window).scrollTop());//显示滚轮距离当前窗口顶部的像素
+        }
+        function returntop() {
+            $(window).scrollTop(0); //设置滚轮距离窗口顶部的距离
+            $(".div1").scrollTop(0); //设置滚轮距离标签顶部的距离
+        }
+
+
+        //jquery绑定事件
+        $('ul li').bind("click",function () {
+            alter(123)
+        }); //对后面新生成的标签无法绑定事件
+
+        $('ul').on('click','li',function () {
+            alert(456);
+        }); //该绑定对新生成的标签也生效，表示把ul发生的事件委托给li
+
+        $("ul li").unbind("click"); //接触绑定事件
+        $("ul li").click(function () {
+            for(var i=0;i<5;i++){
+                var $ele=$("<li>");
+                var len = $("ul li").length;
+                $ele.html(len+1);
+                $("ul").append($ele);
+            }
+        });
+
+        //页面框架加载完成后才执行此函数中的内容
+        $(document).ready(function () {
+            $('ul li').html(5);
+        });
+        $(function () {
+            $('ul li').html(5);
+        });
+
+        //动画效果显示
+        function f_show() {
+            $('div').show(1000);//使用1秒来显示
+        }
+        function f_hide() {
+            $('div').hide(1000,function () {
+                alert(123); //定义执行完hide之后调用的回调函数
+            });//使用1秒时间隐藏标签
+        }
+        function f_toggle() {
+            $("div").toggle(1000); //显示的隐藏，隐藏的显示
+        }
+
+        function f_show1() {
+            $('div').slideDown(1000);//使用1秒来显示
+        }
+        function f_hide1() {
+            $('div').slideUp(1000);//使用1秒时间隐藏标签
+        }
+        function f_toggle1() {
+            $("div").slideToggle(1000); //显示的隐藏，隐藏的显示
+        }
+
+        function f_show2() {
+            $('div').fadeIn(1000);//使用1秒来显示
+        }
+        function f_hide2() {
+            $('div').fadeOut(1000);//使用1秒时间隐藏标签
+        }
+        function f_toggle2() {
+            $("div").fadeToggle(1000); //显示的隐藏，隐藏的显示
+        }
+        function f_fade2() {
+            $('div').fadeTo(1000,0.1);//使用1秒时间隐藏标签
+        }
+
+
+    </script>
+</body>
+</html>

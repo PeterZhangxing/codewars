@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <style>
+        .outter{
+            height: 200px;
+            width: 80%;
+            background-color: aqua;
+            border: solid 1px red;
+            text-align: center;
+            line-height: 200px;
+        }
+    </style>
+
+    <script src="jspLibs/jquery-1.12.4.js"></script>
+    <script>
+        $(document).ready(function () {
+            $('#fadeout').click(function () {
+                $('.outter').fadeOut(1000);
+            });
+
+            $('#fadein').click(function () {
+                $('.outter').fadeIn(1000);
+            });
+
+            $('#fadetoggle').click(function () {
+                $('.outter').fadeToggle(1000);
+            });
+
+            $('#slideout').click(function () {
+                $('.outter').slideUp(1000);
+            });
+
+            $('#slidein').click(function () {
+                $('.outter').slideDown(1000);
+            });
+
+            $('#slidetoggle').click(function () {
+                $('.outter').slideToggle(1000);
+            });
+        });
+    </script>
+</head>
+<body>
+    <div class="outter">hahahaha</div>
+    <div class="fades">
+        <button id="fadeout">fadeout</button>
+        <button id="fadein">fadein</button>
+        <button id="fadetoggle">fadetoggle</button>
+    </div>
+
+    <div class="slides">
+        <button id="slideout">slideout</button>
+        <button id="slidein">slidein</button>
+        <button id="slidetoggle">slidetoggle</button>
+    </div>
+
+
+</body>
+</html>

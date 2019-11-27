@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <style>
+        div.insider span{
+            background-color: black;
+        }
+
+        .insider span{
+            background-color: yellow!important;
+        }
+
+        #inner3 .insider .span1{
+            background-color: green;
+        }
+
+        #inner3 div .span1{
+            background-color: red;
+        }
+
+        /*定位同一个标签存在优先级：*/
+        /*1、写在标签内部的样式表优先级最高*/
+        /*2、id的优先级为100*/
+        /*3、class的优先级为10*/
+        /*4、标签本身优先级为1*/
+        /*5、子标签继承父标签的属性优先级最低*/
+        /*6、使用组合定位时，优先级就是全部定位符的优先级之和，越大越优先使用*/
+        /*7、优先级一样的后定义的生效*/
+        /*注意：加上!important属性的属性优先级比任何人的都高*/
+
+    </style>
+</head>
+<body>
+    <div class="outter">
+        <div id="inner1" class="inner1">div1</div>
+
+        <div id="inner2" class="inner2">div2</div>
+
+        <div id="inner3" class="inner3">div3
+            <div class="insider">
+                <span class="span1" style="background-color: blueviolet">span_lab</span>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

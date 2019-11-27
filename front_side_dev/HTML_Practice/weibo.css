@@ -1,0 +1,107 @@
+
+*{
+    font-family: ".PingFang SC", "Microsoft YaHei";
+    font-size: 14px;
+    margin: 0;
+    padding: 0;
+}
+
+a{
+    text-decoration: none;
+}
+
+.left{
+    width: 20%;
+    background-color: rgb(76,77,76);
+    height: 100%;
+    position: fixed;
+    left: 0;
+    top: 0;
+}
+
+.header-img>img{
+    /*width: 128px;*/
+    /*height: 128px;*/
+    max-height: 100%;
+    max-width: 100%;
+}
+
+.header-img{
+    height: 128px;
+    width: 128px;
+    margin: 0 auto;
+    border: 3px solid white;
+    border-radius: 50%;
+    overflow: hidden;
+    margin-top: 30px;
+}
+
+.blog-name{
+    color: white;
+    font-size: 20px;
+    font-weight: bolder;
+    text-align: center;
+    margin: 30px 0;
+}
+
+.blog-info{
+    color: white;
+    text-align: center;
+    margin: 15px 15px;
+}
+
+.blog-links,
+.blog-tags {
+    text-align: center;
+    margin-top: 20px;
+}
+
+.blog-links a,
+.blog-tags a {
+    color: #eee;
+}
+
+ul li{
+    list-style-type:none;
+}
+
+.right {
+    width: 80%;
+    background-color: rgb(238,237,237);
+    height: 1000px;
+    float: right;
+}
+
+.article-list {
+    margin-left: 15px;
+    margin-top: 30px;
+    margin-right: 15px;
+}
+
+.article{
+    background-color: white;
+    margin-bottom: 35px;
+}
+
+.article-name {
+    display: inline-block;
+}
+
+.article-title{
+    padding: 15px;
+    border-left: 3px solid red;
+}
+
+.article-info {
+    padding: 15px;
+}
+
+.article-tag {
+    padding: 15px 15px;
+    margin: 15px 0;
+    border-top: 3px solid #eeeeee;
+}
+
+.article-date{
+    float:right;
+}

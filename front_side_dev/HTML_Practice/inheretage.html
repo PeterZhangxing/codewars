@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <style>
+        .father{
+            height:100px;
+            width:50px;
+            border:2px solid blue;
+            background-color: red;
+            font-size: 20px;
+            font-family: "Times New Roman";
+        }
+
+        .son{
+            background-color: aqua;
+            font-size: 10px;
+        }
+        /*子标签在自己没有定义自己的样式时，默认继承父标签的背景色，字体等样式，如果子标签定义了就使用子标签的样式*/
+    </style>
+</head>
+<body>
+    <div class="father">
+        <div class="son">son</div>
+        father
+    </div>
+</body>
+</html>

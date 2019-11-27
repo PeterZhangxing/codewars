@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+     <style>
+        *{
+            margin: 0px;
+            padding: 0px;
+        }
+
+        .div2{
+            width: 80%;
+            height: 1800px;
+            background-color: rebeccapurple;
+        }
+
+        .returnTop{
+            position: fixed;
+            right: 20px;
+            bottom: 20px;
+            width: 90px;
+            height: 50px;
+            background-color: black;
+            color: green;
+            text-align: center;
+            line-height: 50px;
+        }
+
+        .hide{
+            display: none;
+        }
+
+    </style>
+</head>
+<body>
+
+    <div class="div2"></div>
+    <div class="returnTop hide" onclick="returnTop()">返回顶部</div>
+
+    <script src="../libs/jquery-3.1.1.js"></script>
+    <script>
+
+        //监控窗口滚动条是否滑动的事件，产生滑动就执行下面的函数
+        $(window).scroll(function () {
+           if($(window).scrollTop() > 300){ //判断滑动条距离窗口顶部的距离
+               $(".returnTop").fadeIn(1000);
+           }else {
+               $(".returnTop").fadeOut(1000);
+           };
+        });
+
+        function returnTop() {
+            $(window).scrollTop(0); //设置滑动条距离串口顶部的距离
+        };
+
+    </script>
+
+</body>
+</html>

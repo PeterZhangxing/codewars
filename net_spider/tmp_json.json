@@ -1,0 +1,418 @@
+{
+  "data": [
+    {
+      "directors": [
+        "安·德鲁扬",
+        "塞思·麦克法兰"
+      ],
+      "rate": "9.7",
+      "cover_x": 523,
+      "star": "50",
+      "title": "宇宙时空之旅",
+      "url": "https:\/\/movie.douban.com\/subject\/24698699\/",
+      "casts": [
+        "Mehdi Merali",
+        "朱利安·欧文登",
+        "理查·基尔",
+        "尼尔·德格拉塞·泰森",
+        "加利·艾尔维斯"
+      ],
+      "cover": "https://img1.doubanio.com\/view\/photo\/s_ratio_poster\/public\/p2167325287.jpg",
+      "id": "24698699",
+      "cover_y": 742
+    },
+    {
+      "directors": [
+        "何苦"
+      ],
+      "rate": "9.7",
+      "cover_x": 750,
+      "star": "50",
+      "title": "最后的棒棒",
+      "url": "https:\/\/movie.douban.com\/subject\/26636841\/",
+      "casts": [
+        "何苦"
+      ],
+      "cover": "https://img3.doubanio.com\/view\/photo\/s_ratio_poster\/public\/p2461128191.jpg",
+      "id": "26636841",
+      "cover_y": 1334
+    },
+    {
+      "directors": [
+        "Peter Whitmore",
+        "Sydney Lotterby"
+      ],
+      "rate": "9.7",
+      "cover_x": 852,
+      "star": "50",
+      "title": "是，首相 第一季",
+      "url": "https:\/\/movie.douban.com\/subject\/1441948\/",
+      "casts": [
+        "保罗·爱丁顿",
+        "奈杰尔·霍桑",
+        "德里克·福德斯",
+        "戴安娜·霍迪诺特",
+        "黛柏拉·诺顿"
+      ],
+      "cover": "https://img3.doubanio.com\/view\/photo\/s_ratio_poster\/public\/p2187836471.jpg",
+      "id": "1441948",
+      "cover_y": 1195
+    },
+    {
+      "directors": [
+        "艾雷斯泰·法瑟吉尔"
+      ],
+      "rate": "9.7",
+      "cover_x": 542,
+      "star": "50",
+      "title": "冰冻星球",
+      "url": "https:\/\/movie.douban.com\/subject\/6886533\/",
+      "casts": [
+        "戴维·阿滕伯勒",
+        "李易",
+        "大泽隆夫"
+      ],
+      "cover": "https://img1.doubanio.com\/view\/photo\/s_ratio_poster\/public\/p2151273927.jpg",
+      "id": "6886533",
+      "cover_y": 700
+    },
+    {
+      "directors": [],
+      "rate": "9.7",
+      "cover_x": 591,
+      "star": "50",
+      "title": "久石让在武道馆：与宫崎骏动画一同走过的25年",
+      "url": "https:\/\/movie.douban.com\/subject\/4167113\/",
+      "casts": [
+        "久石让",
+        "大桥望美",
+        "高畑勋",
+        "宫崎骏"
+      ],
+      "cover": "https://img1.doubanio.com\/view\/photo\/s_ratio_poster\/public\/p2163632289.jpg",
+      "id": "4167113",
+      "cover_y": 827
+    },
+    {
+      "directors": [
+        "乔·施佩尔",
+        "厄内斯特·R·迪克森",
+        "Joy Kecken \/  Lusco",
+        "Scott Kecken",
+        "丹尼尔·艾提奥斯",
+        "阿格涅丝卡·霍兰",
+        "塞斯·曼恩",
+        "多米尼克·威斯特",
+        "安东尼·海明威",
+        "克拉克·约翰森"
+      ],
+      "rate": "9.7",
+      "cover_x": 1013,
+      "star": "50",
+      "title": "火线 第五季",
+      "url": "https:\/\/movie.douban.com\/subject\/2393060\/",
+      "casts": [
+        "多米尼克·威斯特",
+        "雷格·E·凯蒂",
+        "约翰·道曼",
+        "艾丹·吉伦",
+        "克拉克·约翰森"
+      ],
+      "cover": "https://img1.doubanio.com\/view\/photo\/s_ratio_poster\/public\/p2177042077.jpg",
+      "id": "2393060",
+      "cover_y": 1500
+    },
+    {
+      "directors": [
+        "乔·施佩尔",
+        "克里斯汀·摩尔",
+        "塞斯·曼恩",
+        "丹尼尔·艾提奥斯",
+        "安东尼·海明威",
+        "阿格涅丝卡·霍兰",
+        "阿莱克斯·扎克雷泽夫斯基",
+        "厄内斯特·R·迪克森",
+        "布拉德·安德森",
+        "吉姆·麦凯",
+        "大卫·普拉特"
+      ],
+      "rate": "9.7",
+      "cover_x": 580,
+      "star": "50",
+      "title": "火线  第四季",
+      "url": "https:\/\/movie.douban.com\/subject\/2154349\/",
+      "casts": [
+        "多米尼克·威斯特",
+        "约翰·道曼",
+        "弗兰基·费森",
+        "艾丹·吉伦",
+        "迪尔德丽·罗夫乔"
+      ],
+      "cover": "https://img3.doubanio.com\/view\/photo\/s_ratio_poster\/public\/p2177042096.jpg",
+      "id": "2154349",
+      "cover_y": 859
+    },
+    {
+      "directors": [],
+      "rate": "9.7",
+      "cover_x": 448,
+      "star": "50",
+      "title": "天下足球",
+      "url": "https:\/\/movie.douban.com\/subject\/26415300\/",
+      "casts": [
+        "段暄",
+        "刘建宏",
+        "弗格森爵士",
+        "巴勃罗·艾马尔",
+        "迭戈·马拉多纳"
+      ],
+      "cover": "https://img3.doubanio.com\/view\/photo\/s_ratio_poster\/public\/p2264941730.jpg",
+      "id": "26415300",
+      "cover_y": 672
+    },
+    {
+      "directors": [
+        "马克·弗劳尔斯",
+        "尼古拉斯·布朗",
+        "汤姆·休·琼斯",
+        "塔彭丝·斯通"
+      ],
+      "rate": "9.7",
+      "cover_x": 1109,
+      "star": "50",
+      "title": "人类星球",
+      "url": "https:\/\/movie.douban.com\/subject\/5950117\/",
+      "casts": [
+        "约翰·赫特",
+        "罗杰·芒斯"
+      ],
+      "cover": "https://img1.doubanio.com\/view\/photo\/s_ratio_poster\/public\/p2189099477.jpg",
+      "id": "5950117",
+      "cover_y": 1500
+    },
+    {
+      "directors": [
+        "玛莎·霍尔姆斯"
+      ],
+      "rate": "9.7",
+      "cover_x": 1089,
+      "star": "50",
+      "title": "生命",
+      "url": "https:\/\/movie.douban.com\/subject\/4135259\/",
+      "casts": [
+        "戴维·阿滕伯勒",
+        "道格·艾伦",
+        "奥普拉·温弗瑞",
+        "玛拉雅·瑞沃拉·德鲁 "
+      ],
+      "cover": "https://img3.doubanio.com\/view\/photo\/s_ratio_poster\/public\/p1506791425.jpg",
+      "id": "4135259",
+      "cover_y": 1500
+    },
+    {
+      "directors": [],
+      "rate": "9.7",
+      "cover_x": 439,
+      "star": "50",
+      "title": "张国荣热·情演唱会",
+      "url": "https:\/\/movie.douban.com\/subject\/30466847\/",
+      "casts": [
+        "张国荣"
+      ],
+      "cover": "https://img3.doubanio.com\/view\/photo\/s_ratio_poster\/public\/p2548872045.jpg",
+      "id": "30466847",
+      "cover_y": 700
+    },
+    {
+      "directors": [
+        "马克·布朗罗"
+      ],
+      "rate": "9.7",
+      "cover_x": 858,
+      "star": "50",
+      "title": "南太平洋",
+      "url": "https:\/\/movie.douban.com\/subject\/3837519\/",
+      "casts": [
+        "马克·布朗罗",
+        "本尼迪克特·康伯巴奇"
+      ],
+      "cover": "https://img3.doubanio.com\/view\/photo\/s_ratio_poster\/public\/p2187865394.jpg",
+      "id": "3837519",
+      "cover_y": 1280
+    },
+    {
+      "directors": [],
+      "rate": "9.7",
+      "cover_x": 691,
+      "star": "50",
+      "title": "周一开始便熬夜",
+      "url": "https:\/\/movie.douban.com\/subject\/25784298\/",
+      "casts": [
+        "村上信五",
+        "松子DELUXE"
+      ],
+      "cover": "https://img1.doubanio.com\/view\/photo\/s_ratio_poster\/public\/p2163155747.jpg",
+      "id": "25784298",
+      "cover_y": 426
+    },
+    {
+      "directors": [],
+      "rate": "9.7",
+      "cover_x": 700,
+      "star": "50",
+      "title": "张国荣跨越97演唱会",
+      "url": "https:\/\/movie.douban.com\/subject\/30468860\/",
+      "casts": [
+        "张国荣"
+      ],
+      "cover": "https://img3.doubanio.com\/view\/photo\/s_ratio_poster\/public\/p2549159520.jpg",
+      "id": "30468860",
+      "cover_y": 1056
+    },
+    {
+      "directors": [
+        "Beth McCarthy-Miller"
+      ],
+      "rate": "9.7",
+      "cover_x": 549,
+      "star": "50",
+      "title": "涅磐纽约不插电演唱会",
+      "url": "https:\/\/movie.douban.com\/subject\/1449961\/",
+      "casts": [
+        "科特·柯本",
+        "戴夫·格罗",
+        "克里斯特·诺沃塞克",
+        "Pat Smear",
+        "Cris Kirkwood"
+      ],
+      "cover": "https://img3.doubanio.com\/view\/photo\/s_ratio_poster\/public\/p2534942806.jpg",
+      "id": "1449961",
+      "cover_y": 771
+    },
+    {
+      "directors": [
+        "Larry Leichliter"
+      ],
+      "rate": "9.7",
+      "cover_x": 891,
+      "star": "50",
+      "title": "探险活宝 第四季",
+      "url": "https:\/\/movie.douban.com\/subject\/20391869\/",
+      "casts": [
+        "杰里米·沙达",
+        "约翰·迪·玛吉欧",
+        "奥利维亚·奥尔森",
+        "海登·瓦尔希",
+        "汤姆·肯尼"
+      ],
+      "cover": "https://img1.doubanio.com\/view\/photo\/s_ratio_poster\/public\/p2218780158.jpg",
+      "id": "20391869",
+      "cover_y": 1254
+    },
+    {
+      "directors": [],
+      "rate": "9.7",
+      "cover_x": 500,
+      "star": "50",
+      "title": "张国荣告别演唱会",
+      "url": "https:\/\/movie.douban.com\/subject\/30468861\/",
+      "casts": [
+        "张国荣"
+      ],
+      "cover": "https://img3.doubanio.com\/view\/photo\/s_ratio_poster\/public\/p2549159523.jpg",
+      "id": "30468861",
+      "cover_y": 752
+    },
+    {
+      "directors": [
+        "安德烈·斯萨拉福",
+        "帕特里克·麦克海尔",
+        "彭德尔顿·沃德"
+      ],
+      "rate": "9.7",
+      "cover_x": 590,
+      "star": "50",
+      "title": "探险活宝 第七季",
+      "url": "https:\/\/movie.douban.com\/subject\/26419345\/",
+      "casts": [
+        "杰里米·沙达",
+        "约翰·迪·玛吉欧",
+        "安德鲁·达利",
+        "保罗·谢尔",
+        "海登·瓦尔希"
+      ],
+      "cover": "https://img3.doubanio.com\/view\/photo\/s_ratio_poster\/public\/p2501489202.jpg",
+      "id": "26419345",
+      "cover_y": 884
+    },
+    {
+      "directors": [
+        "Vincent Scarza"
+      ],
+      "rate": "9.7",
+      "cover_x": 844,
+      "star": "50",
+      "title": "拯救生命演唱会",
+      "url": "https:\/\/movie.douban.com\/subject\/1840299\/",
+      "casts": [
+        "加里·凯普",
+        "戴安娜王妃",
+        "Casey Kasem",
+        "Andrew Farriss",
+        "Nick Ashford"
+      ],
+      "cover": "https://img1.doubanio.com\/view\/photo\/s_ratio_poster\/public\/p2552993858.jpg",
+      "id": "1840299",
+      "cover_y": 1200
+    },
+    {
+      "directors": [
+        "彭德尔顿·沃德",
+        "汤浅政明"
+      ],
+      "rate": "9.7",
+      "cover_x": 1000,
+      "star": "50",
+      "title": "探险活宝 第六季",
+      "url": "https:\/\/movie.douban.com\/subject\/25863904\/",
+      "casts": [
+        "杰里米·沙达",
+        "约翰·迪·玛吉欧",
+        "海登·瓦尔希",
+        "汤姆·肯尼",
+        "Ashly Burch "
+      ],
+      "cover": "https://img1.doubanio.com\/view\/photo\/s_ratio_poster\/public\/p2384691458.jpg",
+      "id": "25863904",
+      "cover_y": 1426
+    }
+  ]
+}
+
+{
+  "from": "local",
+  "result": "suee",
+  "quality": 6,
+  "format": "mp4",
+  "timelength": 3340631,
+  "accept_format": "mp4",
+  "accept_quality": {
+    "0": 6
+  },
+  "video_codecid": 7,
+  "video_project": false,
+  "seek_param": "start",
+  "seek_type": "second",
+  "durl": {
+    "0": {
+      "order": 1,
+      "length": 3340631,
+      "size": 98141670,
+      "url": "http:\/\/cn-jsnj3-cmcc-v-10.acgvideo.com\/upgcxcode\/66\/10\/93971066\/93971066-1-6.mp4?expires=1559142900&platform=html5&ssig=NEMYqpRAW-RWObtxBbKe3Q&oi=662859112&trid=ff2fbe33652040ac98d8e9e157de0a2d&nfb=maPYqpoel5MI3qOUX6YpRA==&nfc=1"
+    }
+  },
+  "img": "https:\/\/i2.hdslb.com\/bfs\/archive\/4b4c114be56885e8b8e31118fff8292573c60fe2.jpg",
+  "cid": "https:\/\/comment.bilibili.com\/93971066.xml",
+  "fromview": "vupload"
+}
+

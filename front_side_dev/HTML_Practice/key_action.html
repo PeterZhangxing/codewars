@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+    <table border="1" id="t1">
+        <thead>
+        <tr>
+            <th>#</th>
+            <th>姓名</th>
+            <th>爱好</th>
+            <th>操作</th>
+        </tr>
+        </thead>
+        <tbody>
+        <tr>
+            <td><input type="checkbox"></td>
+            <td>小强</td>
+            <td>吃冰激凌</td>
+            <td>
+                <select>
+                    <option value="0">下线</option>
+                    <option value="1">上线</option>
+                    <option value="2">离线</option>
+                </select>
+            </td>
+        </tr>
+        <tr>
+            <td><input type="checkbox"></td>
+            <td>二哥</td>
+            <td>Girl</td>
+            <td>
+                <select>
+                    <option value="0">下线</option>
+                    <option value="1">上线</option>
+                    <option value="2">离线</option>
+                </select>
+            </td>
+        </tr>
+        <tr>
+            <td><input type="checkbox"></td>
+            <td>二哥</td>
+            <td>Girl</td>
+            <td>
+                <select>
+                    <option value="0">下线</option>
+                    <option value="1">上线</option>
+                    <option value="2">离线</option>
+                </select>
+            </td>
+        </tr>
+        <tr>
+            <td><input type="checkbox"></td>
+            <td>二哥</td>
+            <td>Girl</td>
+            <td>
+                <select>
+                    <option value="0">下线</option>
+                    <option value="1">上线</option>
+                    <option value="2">离线</option>
+                </select>
+            </td>
+        </tr>
+        <tr>
+            <td><input type="checkbox"></td>
+            <td>二哥</td>
+            <td>Girl</td>
+            <td>
+                <select>
+                    <option value="0">下线</option>
+                    <option value="1">上线</option>
+                    <option value="2">离线</option>
+                </select>
+            </td>
+        </tr>
+        </tbody>
+    </table>
+
+    <script src="jspLibs/jquery-3.2.1.min.js"></script>
+    <script>
+        var mode = false;
+        $(document).ready(function () {
+            var bEle = $('body');
+            bEle.on('keydown',function (event) {
+                // console.log(event.keyCode);
+                if(event.keyCode===17){
+                    mode = true;
+                }
+                // console.log(mode);
+            });
+
+            bEle.on('keyup',function (event) {
+                // console.log(event.keyCode);
+                if(event.keyCode===17){
+                    mode = false;
+                }
+            });
+
+            $('select').on("change",function () {
+                var value = $(this).val();
+                // console.log(value);
+                var $thisRowCheck = $(this).parent().siblings().find(':checkbox');
+                // console.log($thisRowCheck);
+                if($thisRowCheck.prop("checked") && mode){
+                    $(':checked').each(function () {
+                        $(this).parent().siblings().find('select').val(value);
+                    })
+                }
+            })
+        })
+    </script>
+</body>
+</html>

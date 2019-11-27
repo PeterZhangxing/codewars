@@ -1,0 +1,3 @@
+2019-02-27 20:38:56,569 - mylog - WARNING [line:1344] : warning level information
+2019-02-27 20:38:56,570 - mylog - ERROR [line:1345] : error level information
+2019-02-27 20:38:56,570 - mylog - CRITICAL [line:1346] : critical level information

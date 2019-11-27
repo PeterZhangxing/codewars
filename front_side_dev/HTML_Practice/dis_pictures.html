@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+
+    <style>
+
+        .outter{
+            width: 790px;
+            height: 340px;
+            margin: 80px auto;
+            position: relative;
+        }
+        .img li{
+            display: inline-block;
+            position: absolute;
+            list-style: none;
+            top: 0;
+            left: 0;
+        }
+        .num{
+            display: inline;
+            list-style: none;
+            position: absolute;
+            left: 50%;
+            bottom: 10px;
+            margin-left: -145px;
+        }
+        .num li{
+            display: inline-block;
+            width: 18px;
+            height: 18px;
+            list-style: none;
+            background-color: lightgrey;
+            border-radius: 50%;
+            margin: 2px 2px;
+        }
+        .btn{
+            display: none;
+            position: absolute;
+            top: 50%;
+            width: 30px;
+            height: 60px;
+            background-color: lightgrey;
+            color: white;
+            text-align: center;
+            line-height: 60px;
+            font-size: 30px;
+            opacity: 0.6;
+            margin-top: -30px;
+            cursor: pointer;
+        }
+        .left{
+            left: 0;
+        }
+        .right{
+            right: 0;
+        }
+        .outter:hover .btn{
+            display: inline-block;
+        }
+        .num .active{
+            background-color: red;
+        }
+    </style>
+
+</head>
+
+<body>
+
+    <div class="outter">
+
+        <ul class="img">
+            <li><a href=""><img src="imags/1.jpg" alt="commodity1"/></a></li>
+            <li><a href=""><img src="imags/2.jpg" alt="commodity2"/></a></li>
+            <li><a href=""><img src="imags/3.jpg" alt="commodity3"/></a></li>
+            <li><a href=""><img src="imags/4.jpg" alt="commodity4"/></a></li>
+            <li><a href=""><img src="imags/5.jpg" alt="commodity5"/></a></li>
+            <li><a href=""><img src="imags/6.jpg" alt="commodity6"/></a></li>
+            <li><a href=""><img src="imags/7.jpg" alt="commodity7"/></a></li>
+            <li><a href=""><img src="imags/8.jpg" alt="commodity8"/></a></li>
+        </ul>
+
+        <ul class="num"></ul>
+
+        <div class="left btn"> < </div>
+        <div class="right btn"> > </div>
+
+    </div>
+
+        <script src="jspLibs/jquery-3.1.1.js"></script>
+
+        <script>
+
+            var i = 0;
+
+            var img_num = $('.img').children().length;
+            for(j=0;j<img_num;j++){
+              var $ele=$("<li>");
+              $('.num').append($ele);
+            };
+            //有多少图片就生成多少个下标点
+
+            $('.num').children('li').mouseover(function () {
+                $('.num').children('li').removeClass('active');
+                $(this).addClass('active');
+
+                i = $(this).index();
+                $('.img li').eq(i).stop().fadeIn(200).siblings().stop().fadeOut(200);
+            });
+            //鼠标悬浮在下标点上时变红,并显示该下标对应的图片
+
+            var my_inter = setInterval(auto_dp,2000)
+            function auto_dp() {
+                if (i < img_num-1){
+                    i++;
+                }else {
+                    i = 0;
+                }
+                $('.num li').eq(i).addClass('active').siblings().removeClass('active');
+                $('.img li').eq(i).stop().fadeIn(200).siblings().stop().fadeOut(200);
+            };
+            //完成每隔2秒自动换一张图片
+
+            $('.outter').mouseover(function () {
+                clearInterval(my_inter);
+            }).mouseout(function () {
+                my_inter = setInterval(auto_dp,2000)
+            });
+            //当鼠标停留在整个图片上时，取消定时轮播功能，离开又开始
+
+            function m_left() {
+                if (i > 0){
+                    i--;
+                }else {
+                    i = img_num-1;
+                }
+                $('.num li').eq(i).addClass('active').siblings().removeClass('active');
+                $('.img li').eq(i).stop().fadeIn(200).siblings().stop().fadeOut(200);
+            };
+            $('.outter .left').click(m_left);
+            $('.outter .right').click(auto_dp);
+            //实现点击左按钮向前跳一张图片，点击右按钮向后跳一张图片
+
+        </script>
+
+</body>
+</html>

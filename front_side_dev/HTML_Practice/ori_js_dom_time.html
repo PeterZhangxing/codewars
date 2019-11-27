@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+    <input id="i1" type="text">
+    <input id="start" type="button" value="开始">
+    <input id="stop" type="button" value="停止">
+
+    <script>
+        var t;
+        function foo() {
+            var now = new Date();
+            var date_str = now.toLocaleString();
+            var time_show = document.getElementById('i1');
+            time_show.value = date_str;
+        }
+
+        var start_b = document.getElementById('start');
+        start_b.onclick = function () {
+            foo();
+            if(t===undefined){
+                t = setInterval(foo,2000);
+            }
+        };
+
+        var stop_b = document.getElementById('stop');
+        stop_b.onclick = function () {
+            clearInterval(t);
+            t = undefined;
+        }
+    </script>
+</body>
+</html>

@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+    <select id="s1">
+        <option value="0">--请选择--</option>
+        <option value="1">北京</option>
+        <option value="2">上海</option>
+    </select>
+
+    <select id="s2"></select>
+
+    <script>
+        var s2_con = {1:["昌平区", "朝阳区", "海淀区"],2:["静安区", "闵行区", "浦东区"]};
+
+        var s1_sel = document.getElementById('s1');
+        s1_sel.onchange=function () {
+            var s1_val = this.value;
+            var selected_data = s2_con[s1_val];
+
+            var s2Ele = document.getElementById('s2');
+            s2Ele.innerHTML="";
+            for(var i=0;i<selected_data.length;i++){
+                var s2_op = document.createElement('option');
+                s2_op.innerText=selected_data[i];
+                s2_op.value=i;
+                s2Ele.appendChild(s2_op);
+            }
+        };
+    </script>
+</body>
+</html>

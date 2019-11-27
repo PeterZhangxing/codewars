@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <style>
+        .cover {
+            position: fixed;
+            top: 0;
+            right: 0;
+            bottom: 0;
+            left: 0;
+            background-color: #616161;
+            opacity: 0.4;
+            z-index: 998;
+        }
+
+        .modal {
+            height: 200px;
+            width: 300px;
+            background-color: white;
+            position: absolute;
+            margin-top: -100px;
+            margin-left: -150px;
+            top: 50%;
+            left: 50%;
+            z-index: 1000;
+        }
+
+        .hide {
+            display: none;
+        }
+    </style>
+</head>
+<body>
+<button id="add">新增</button>
+<table border="1">
+    <thead>
+    <tr>
+        <th>#</th>
+        <th>姓名</th>
+        <th>爱好</th>
+        <th>操作</th>
+    </tr>
+    </thead>
+    <tbody>
+    <tr>
+        <td>1</td>
+        <td>Egon</td>
+        <td>街舞</td>
+        <td>
+            <button class="edit-btn">编辑</button>
+            <button class="delete-btn">删除</button>
+        </td>
+    </tr>
+    <tr>
+        <td>2</td>
+        <td>Alex</td>
+        <td>烫头</td>
+        <td>
+            <button class="edit-btn">编辑</button>
+            <button class="delete-btn">删除</button>
+        </td>
+    </tr>
+    <tr>
+        <td>3</td>
+        <td>苑局</td>
+        <td>日天</td>
+        <td>
+            <button class="edit-btn">编辑</button>
+            <button class="delete-btn">删除</button>
+        </td>
+    </tr>
+    </tbody>
+</table>
+
+<div id="myCover" class="cover hide"></div>
+<div id="myModal" class="modal hide">
+    <div>
+        <p>
+            <label for="modal-name">姓名</label>
+            <input type="text" id="modal-name">
+        </p>
+        <p>
+            <label for="modal-hobby">爱好</label>
+            <input type="text" id="modal-hobby">
+        </p>
+        <p>
+            <button id="modal-submit">提交</button>
+            <button id="modal-cancel">取消</button>
+        </p>
+    </div>
+</div>
+
+<script src="jspLibs/jquery-3.2.1.min.js"></script>
+<script>
+    function showM() {
+        $('#myCover,#myModal').removeClass("hide");
+    }
+
+    function closeM() {
+        $('#myModal').find('input').val("");
+        $('#myCover,#myModal').addClass("hide");
+    }
+
+    $('#add').on('click', function () {
+        showM();
+    });
+
+    $('#modal-cancel').on('click', function () {
+        closeM();
+    });
+
+    $('#modal-submit').on('click', function () {
+        var name = $('#modal-name').val();
+        var hobby = $('#modal-hobby').val();
+
+        var $myMEle = $('#myModal');
+        var $cTr = $myMEle.data('cTr');
+        if ($cTr !== undefined) {
+            $cTr.children().eq(1).text(name);
+            $cTr.children().eq(2).text(hobby);
+            $myMEle.removeData();
+        } else {
+            var newRow = document.createElement('tr');
+            var sNum = $('table tr').length;
+            $(newRow).html(
+                "<td>" + sNum + "</td>" +
+                "<td>" + name + "</td>" +
+                "<td>" + hobby + "</td>" +
+                '<td><button class="edit-btn">编辑</button> ' +
+                '<button class="delete-btn">删除</button></td>'
+            );
+            $('tbody').append(newRow);
+        }
+        closeM();
+    });
+    var $tBodyEle =  $('tbody');
+   $tBodyEle.on('click','.edit-btn',function () {
+        $('#myModal').data('cTr',$(this).parent().parent());
+        showM();
+        var orName=$(this).parent().siblings().eq(1).text();
+        var orHobby=$(this).parent().siblings().eq(2).text();
+        $('#myModal #modal-name').val(orName);
+        $('#myModal #modal-hobby').val(orHobby);
+    });
+
+    $tBodyEle.on('click','.delete-btn',function () {
+        var $delRow=$(this).parent().parent();
+        $delRow.nextAll().each(function () {
+            $(this).children().first().text($(this).children().first().text()-1);
+        });
+        $delRow.remove();
+    })
+</script>
+</body>
+</html>

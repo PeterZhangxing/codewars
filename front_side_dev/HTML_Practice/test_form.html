@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <link rel="stylesheet" href="css1.css">
+</head>
+<body>
+    <form action="http://127.0.0.1:8000/upload/" method="post" enctype="multipart/form-data" autocomplete="on" novalidate>
+        <p>
+            <label for="i1">username</label>
+            <input type="text" id="i1" name="username">
+        </p>
+        <p>
+            <label for="i2">password</label>
+            <input type="password" id="i2" name="passwd">
+        </p>
+        <p>
+            <label for="i3">Male</label>
+            <input type="radio" id="i3" name="gender" value="1">
+            <label for="i4">Female</label>
+            <input type="radio" id="i4" name="gender" value="2">
+            <label for="i41">None</label>
+            <input type="radio" id="i41" name="gender" value="3" checked="checked">
+        </p>
+        <p>
+            <label for="i5">football</label>
+            <input  id="i5" type="checkbox" name="hobbies" value="1" checked="checked">
+            <label for="i6">basketball</label>
+            <input  id="i6" type="checkbox" name="hobbies" value="2">
+            <label for="i7">volleyball</label>
+            <input  id="i7" type="checkbox" name="hobbies" value="3">
+        </p>
+        <p>
+            <label for="s1">your home location</label>
+            <select name="loactions" id="s1">
+                <option value="1">beijin</option>
+                <option value="2">shanghai</option>
+                <option value="3" selected="selected">shengzhen</option>
+            </select>
+        </p>
+        <p>
+            <label for="s2">your home location</label>
+            <select name="loactions" id="s2" multiple="multiple" size="2">
+                <optgroup label="haha">
+                    <option value="1">bububu</option>
+                    <option value="2">dududu</option>
+                    <option value="3">dididi</option>
+                </optgroup>
+                <optgroup label="hehe">
+                    <option value="1">dilidili</option>
+                    <option value="2">acfan</option>
+                    <option value="3">bilibili</option>
+                </optgroup>
+            </select>
+        </p>
+        <p>
+            <input type="date" name="birth_day" placeholder="your birth day here">
+        </p>
+        <p>
+            <textarea name="info" id="t1" cols="30" rows="10"></textarea>
+        </p>
+        <p>
+            <input type="email" name="email" placeholder="email address here">
+        </p>
+        <p>
+            <input type="file" name="upload_file" value="upload_file">
+        </p>
+        <p>
+            <input type="submit" value="tijao">
+            <input type="reset" value="chongzhi">
+            <input type="button" value="button">
+        </p>
+    </form>
+    <table border="2 solid" cellpadding="3" align="center" id="tt1">
+        <thead>
+            <tr><th>id</th><th>name</th><th>gender</th></tr>
+        </thead>
+        <tbody>
+            <tr><td>1</td><td>sadasd</td><td>male</td></tr>
+        </tbody>
+    </table>
+    <p>
+        <span>dsadsad&lt;&nbsp;&copy;&gt;</span>
+    </p>
+</body>
+</html>

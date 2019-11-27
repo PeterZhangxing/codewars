@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+    <input type="text" id="i1" value="1024">
+    <input type="button" value="Search">
+
+    <script>
+        var inp=document.getElementById('i1');
+        inp.onfocus=function () {
+            this.value="";
+        };
+        inp.onblur=function () {
+            this.value="1024";
+        }
+    </script>
+</body>
+</html>

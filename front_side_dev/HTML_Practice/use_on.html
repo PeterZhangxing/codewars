@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+    <table border="1" id="t1">
+        <thead>
+        <tr>
+            <th>#</th>
+            <th>姓名</th>
+            <th>爱好</th>
+            <th>操作</th>
+        </tr>
+        </thead>
+        <tbody>
+        <tr>
+            <td>1</td>
+            <td>小强</td>
+            <td>吃冰激凌</td>
+            <td>
+                <button class="delete">删除</button>
+            </td>
+        </tr>
+        <tr>
+            <td>2</td>
+            <td>二哥</td>
+            <td>Girl</td>
+            <td>
+                <button class="delete">删除</button>
+            </td>
+        </tr>
+        </tbody>
+    </table>
+    <button id="b1">添加一行数据</button>
+
+    <script src="jspLibs/jquery-3.2.1.min.js"></script>
+    <script>
+        $('#b1').on("click",function () {
+            var trEle = document.createElement("tr");
+            $(trEle).html(
+                "<td>3</td>"+"<td>haha</td>"+"<td>hehe</td>"+"<td><button class='delete'>删除</button></td>"
+            );
+            $('#t1 tbody').append(trEle);
+        });
+
+        $('tbody').on("click",".delete",function () {
+            $(this).parent().parent().remove();
+        });
+    </script>
+</body>
+</html>

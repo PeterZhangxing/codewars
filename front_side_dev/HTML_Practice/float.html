@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <style>
+        .outer1{
+            /*height:300px;*/
+            width:600px;
+            border:1px solid red;
+        }
+        .outer2{
+            height:300px;
+            width:600px;
+            background-color: aqua;
+            border:1px solid green;
+        }
+        .inner1{
+            height:200px;
+            width:200px;
+            background-color: black;
+            float: left;
+        }
+        .inner2{
+            height:200px;
+            width:200px;
+            background-color: brown;
+            float: right;
+        }
+        .clearfloat:after{
+            content: "";
+            clear: both;
+            display: block;
+            /*使得即使父类中的全部子元素都已经飘起来了，父元素没有设置宽度，也不会被下面的块元素挤压消失*/
+        }
+    </style>
+</head>
+<body style="margin: 0 auto">
+    <div class="outer1 clearfloat">
+        <div class="inner1"></div>
+        <div class="inner2"></div>
+    </div>
+    <div class="outer2"></div>
+</body>
+</html>

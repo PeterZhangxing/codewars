@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <script>
+        window.onload = function () {
+            var ele = document.getElementsByName('name');
+            console.log(ele.innerHTML);
+        }; //表示整个窗口加载完成后才执行这个函数中的代码
+    </script>
+</head>
+<body>
+    <script>
+        var teststr = "this is a test";
+        var testarr = teststr.split(' '); //用空格对字符串分片，内容放在一个数组中
+        for (var i=0;i<testarr.length;i++) {
+            document.write(testarr[i]);
+            document.write("</br>");
+        };
+        console.log(testarr.join("--")) //拼接数组中的元素，输出字符串
+
+        document.write(teststr.substr(1,2)); //表示从一开始取两个
+        document.write("</br>");
+        document.write(teststr.substring(1,2)); //表示取下标为1的那个，左闭右开区间
+        document.write("</br>");
+//        document.write(teststr.replace("is","ab")); //把前面的字符替换为后面的，就替换一次
+//        document.write("</br>");
+        document.write(teststr.match("is"));
+        document.write("</br>");
+        var fin_str = teststr;
+        while (fin_str.match("is")) {
+            var fin_str = fin_str.replace("is","ab");
+        }; //使用该循环可以替换所有的匹配的字符串
+        document.write(fin_str);
+
+        var arr1 = new Array(2) //注意数字是数组的大小
+        var arr2 = new Array(1,2,3,4) //也可以直接放入数组元素
+        console.log(typeof arr1)
+
+        var arr3 = arr2.concat([5,6]); //在数组后插入其他元素5和6
+        console.log(arr3.toString()); //把任何类型转换为字符串类型
+        console.log(typeof arr3);
+        console.log(arr3.sort()); //按最高位的大小，从小到大排序
+        console.log(arr3.reverse()); //把数组反转过来
+
+        function f(a,b) {
+            if (a>b){
+                return 1
+            }
+            else if (a<b){
+                return -1
+            }
+            else {
+                return 0
+            }
+        };
+        function f2(a,b) {
+            return a-b
+        };
+        console.log(arr3.sort(f)); //真正按照数值大小排序，需要自定义上面的函数，传递进sort
+        console.log(arr3.sort(f2)); //同样可以实现上面的排序功能
+
+        var arr4 = [1,2,3];
+        arr4.push([5,6]); //在数组中再增加一个数组，变成二维的数组，塞进去的是一个整体,插入到数组最后
+        arr4.push('hello',{'e':'tell'});
+        console.log(arr4.toString());
+        arr4.pop(); //弹出数组的最后一个元素，可以赋值给变量，并且从数组中删除
+
+        arr4.unshift([11,22]); //作为一个整体，插入到数组最前面
+        arr4.shift(); //从数组的最前面弹出一个元素
+        console.log(arr4.toString());
+
+        function addf() {
+            var sum = 0;
+            for (var i = 0;i<arguments.length;i++){
+                sum += arguments[i];
+            }; //传递给函数的参数全部在arguments数组中，形参不写也无所谓，参数都能得到
+            return sum;
+        };
+        res = addf(1,2,3)
+        console.log(res);
+
+        //匿名函数,不会像普通函数那样，在执行前加载到内存中
+        var func = function (arg) {
+            alert(arg);
+        };
+        func('hello');
+
+        (function (arg) {
+            alert(arg);
+        })("hello")
+        // 直接调用的匿名函数，自执行函数，直接运行
+
+
+        //window对象提供的方法
+        window.alert('test'); //只是显示提示信息
+
+        var res = window.confirm('continue?'); //返回true或者false
+        console.log(res);
+
+        var res = window.prompt('test...'); //可以获取你输入的内容
+        console.log(res);
+
+        var clock1 = window.setInterval(f,1000); //每1秒执行一下f函数
+        window.clearInterval(clock1); //取消间隔时间执行函数
+
+        var time1 = window.setTimeout(f,1000); //1秒后执行一次f就结束了
+        window.clearTimeout(time1); //取消一秒后要执行的行为
+
+        location.reload(); //刷新当前页面
+        location.replace('http://www.baidu.com') //使用新页面替换当前页面
+
+
+        //DOM对象的内置方法
+        var elems = document.getElementsByClassName("p1"); //获取的是一个数组
+        document.getElementsByName('passwd');
+        document.getElementsByTagName('P')
+        document.getElementById('t1')
+        var ele = elems[0];
+        ele.style.color='red'; //修改或者添加标签样式
+        console.log(elem.nodeValue); //获取标签的value属性的值
+        console.log(elem.innerHTML); //获取标签的内容
+        console.log(elem.innerText); //获取标签的文本内容
+
+        ele.parentNode; //找到其父亲节点
+        ele.nextElementSibling; //找其下一个兄弟标签
+        ele.previousElementSibling; //上一个兄弟标签
+        ele.children; //取得该标签的所有子标签
+
+
+        //鼠标可以触发的事件
+        onfocus //表示光标在输入框内，触发事件
+        onblur //表示光标不再在输入框内，触发事件
+
+
+        //较为常用的事件绑定方式
+        var ele = document.getElementById('test1');
+        ele.onclick = function () {
+            alert('123');
+        };
+
+        ele.className[0];
+        ele.classList[0];
+        ele.classList.add('hide'); //为标签增加类
+        ele.classList.remove('hide'); //删除标签的类
+
+    </script>
+</body>
+</html>
