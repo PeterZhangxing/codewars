@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+
+        ul {
+            list-style-type: none;
+        }
+
+        .hide {
+            display: none;
+        }
+    </style>
+</head>
+<body>
+    <div class="left-menu">
+        <div class="menu-title">菜单一</div>
+        <div class="menu-items">
+            <ul>
+                <li><a href="">111</a></li>
+                <li><a href="">222</a></li>
+                <li><a href="">333</a></li>
+            </ul>
+        </div>
+        <div class="menu-title">菜单二</div>
+        <div class="menu-items hide">
+            <ul>
+                <li><a href="">111</a></li>
+                <li><a href="">222</a></li>
+                <li><a href="">333</a></li>
+            </ul>
+        </div>
+        <div class="menu-title">菜单三</div>
+        <div class="menu-items hide">
+            <ul>
+                <li><a href="">111</a></li>
+                <li><a href="">222</a></li>
+                <li><a href="">333</a></li>
+            </ul>
+        </div>
+    </div>
+
+    <script src="jspLibs/jquery-3.2.1.min.js"></script>
+    <script>
+        // $(".menu-title").click(function () {
+        //     $(".menu-items").addClass("hide");
+        //     var show_men = $(this).next();
+        //     show_men.removeClass("hide");
+        // });
+
+        $(".menu-title").click(function () {
+            var show_men = $(this).next();
+            show_men.removeClass("hide");
+            show_men.siblings(".menu-items").addClass("hide");
+        });
+    </script>
+</body>
+</html>

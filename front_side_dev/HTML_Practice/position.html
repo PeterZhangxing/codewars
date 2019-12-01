@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <style>
+        .outer1{
+            /*height:300px;*/
+            width:600px;
+            border:1px solid red;
+            position: relative;
+            /*一般设置给父级标签，配合子标签的absolute属性使用，单独使用时表示相当于自己当前的位置移动多少*/
+        }
+        .outer2{
+            height:300px;
+            width:600px;
+            background-color: aqua;
+            border:1px solid green;
+        }
+        .inner1{
+            height:200px;
+            width:200px;
+            background-color: black;
+            position: absolute;
+            /*元素已经漂浮起来，如果祖先元素没有有relative属性就是相对于body的位置*/
+            right:20px;
+            top:20px;
+        }
+        .inner2{
+            height:200px;
+            width:200px;
+            background-color: brown;
+        }
+        .inner3{
+            height:200px;
+            width:200px;
+            background-color: brown;
+            position: fixed;
+            /*表示固定在浏览器的某个位置了，不会随着页面的变化而变化*/
+            bottom: 10px;
+            right:10px;
+        }
+    </style>
+</head>
+
+<body style="margin: 0 auto;">
+    <div class="outer1">
+        <div class="inner1"></div>
+        <div class="inner2"></div>
+        <div class="inner3"></div>
+    </div>
+    <div class="outer2"></div>
+</body>
+</html>

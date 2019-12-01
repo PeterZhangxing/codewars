@@ -1,0 +1,27 @@
+#tt1{
+    text-align: center;
+    vertical-align: center;
+    color: grey;
+    background-color: aqua;
+}
+
+table{
+    text-align: right;
+}
+
+table #tt1{
+    color: red;
+}
+
+table>#tt1{
+    color: #8ecd51;
+}
+
+form+#tt1{
+    color: darkblue;
+}
+
+form~#tt1{
+    color: darkblue;
+    background-color: brown;
+}

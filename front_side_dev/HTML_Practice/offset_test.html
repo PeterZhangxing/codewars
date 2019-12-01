@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+        }
+        .box{
+            width: 500px;
+            height: 200px;
+            position: absolute;
+        }
+        .title{
+            background-color: black;
+            height: 50px;
+            width: 500px;
+            line-height: 50px;
+            text-align: center;
+            color: white;
+        }
+        .content{
+            width: 500px;
+            height: 150px;
+            background-color: antiquewhite;
+            text-align: center;
+            line-height: 150px;
+        }
+    </style>
+
+    <script src="jspLibs/jquery-1.12.4.js"></script>
+    <script>
+        $(document).ready(function () {
+            $('.title').mouseover(function () {
+                $(this).css('cursor','pointer');
+            }).mousedown(function (e) { //按下鼠标执行的函数
+                var eve = e || window.event;
+                //获取原始鼠标横纵坐标位置
+
+                var old_m_x = eve.clientX;
+                var old_m_y = eve.clientY;
+
+                var old_box_y = $(this).parent().offset().top;
+                var old_box_x = $(this).parent().offset().left;
+
+                //移动鼠标执行的函数
+                $(this).bind('mousemove',function (eve) {
+                    var new_m_x = eve.clientX;
+                    var new_m_y = eve.clientY;
+
+                    var moved_x = new_m_x - old_m_x;
+                    var moved_y = new_m_y - old_m_y;
+
+                    var new_box_x = old_box_x + moved_x;
+                    var new_box_y = old_box_y + moved_y;
+
+                    $(this).parent().css('left',new_box_x+'px');
+                    $(this).parent().css('top',new_box_y+'px');
+                })
+            }).mouseup(function () { //松开鼠标执行的函数
+                $(this).unbind('mousemove');
+            })
+        })
+    </script>
+</head>
+<body>
+    <div class="box">
+        <div class="title">tilte</div>
+        <div class="content">content</div>
+    </div>
+</body>
+</html>

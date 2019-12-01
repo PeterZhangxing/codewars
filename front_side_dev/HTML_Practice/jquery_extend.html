@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+    <p>111</p>
+    <p>222</p>
+    <p>333</p>
+
+    <script src="jspLibs/jquery-1.12.4.js"></script>
+    <script>
+        
+        //定义和调用全局静态扩展
+        // $.extend({
+        //     myprint:function () {
+        //         alert(123);
+        //     }
+        // });
+        // $.myprint();
+        
+        //定义和调用对象扩展
+        $.fn.extend({
+            mydis:function () {
+                $(this).each(function () {
+                    console.log($(this).html());
+                });
+            }
+        });
+        $('p').mydis();
+
+    </script>
+</body>
+</html>

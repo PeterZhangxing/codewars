@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+        }
+        .outter{
+            position: relative;
+            width: 80%;
+            height: 500px;
+            margin:100px auto;
+            background-color: gray;
+            border-radius: 100px;
+        }
+        .inner{
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            margin-top: -45px;
+            margin-left: -400px;
+            width: 800px;
+            height: 90px;
+            background-color: white;
+            background: rgba(255,255,255,0.5); /*使得子元素不继承父元素的透明度属性*/
+            border-radius: 100px;
+        }
+        .inner .in_inner{
+            display: inline-block;
+            width: 80px;
+            height: 80px;
+            background-color: white;
+            margin-top: 5px;
+            margin-left: 10px;
+            margin-right: 5px;
+            /*默认有5px的右边距，不知道为啥*/
+            border-radius: 50%;
+            opacity: 1;
+        }
+        .inner .in_inner:hover{
+            background-color: red;
+        }
+    </style>
+</head>
+<body>
+    <div class="outter">
+        <div class="inner">
+            <div class="in_inner"></div>
+            <div class="in_inner"></div>
+            <div class="in_inner"></div>
+            <div class="in_inner"></div>
+            <div class="in_inner"></div>
+            <div class="in_inner"></div>
+            <div class="in_inner"></div>
+            <div class="in_inner"></div>
+        </div>
+    </div>
+</body>
+</html>

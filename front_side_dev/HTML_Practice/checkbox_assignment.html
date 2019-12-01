@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+    <table border="1">
+        <thead>
+        <tr>
+            <th>#</th>
+            <th>姓名</th>
+            <th>职位</th>
+        </tr>
+        </thead>
+        <tbody>
+        <tr>
+            <td><input type="checkbox"></td>
+            <td>小东北</td>
+            <td>二人转演员</td>
+        </tr>
+        <tr>
+            <td><input type="checkbox"></td>
+            <td>乔小强</td>
+            <td>xx演员</td>
+        </tr>
+        <tr>
+            <td><input type="checkbox"></td>
+            <td>韩涉</td>
+            <td>导演</td>
+        </tr>
+        </tbody>
+    </table>
+
+    <input type="button" id="b1" value="全选">
+    <input type="button" id="b2" value="反选">
+    <input type="button" id="b3" value="取消">
+
+    <script src="jspLibs/jquery-3.2.1.min.js"></script>
+    <script>
+        $('#b1').click(function () {
+            $(':checkbox').prop("checked",true);
+        });
+        $('#b3').click(function () {
+            $(':checkbox').prop("checked",false);
+        });
+        $('#b2').click(function () {
+            $(':checkbox').each(function () {
+                if(!$(this).prop("checked")){
+                    $(this).prop("checked",true);
+
+                }else{
+                    $(this).prop("checked",false);
+                }
+            });
+        });
+    </script>
+</body>
+</html>

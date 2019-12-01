@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+
+    <style>
+        *{
+            margin: 0 auto;
+        }
+        .outter{
+            width: 100%;
+            height: 800px;
+        }
+        .left_in{
+            width: 10%;
+            height: 800px;
+            background-color: gray;
+            float: left;
+        }
+        .right_in{
+            width: 90%;
+            height: 800px;
+            background-color: darkgray;
+            float: left;
+        }
+        .menu_title{
+            height: 35px;
+            line-height: 35px;
+            text-align: center;
+            font-size: 20px;
+            font-weight: bold;
+            background-color: dimgrey;
+            cursor: pointer;
+        }
+        .menu_content{
+            height: 35px;
+            line-height: 35px;
+            text-align: center;
+            border: 1px black solid;
+            background-color: lightcyan;
+            cursor: pointer;
+        }
+        .hide{
+            display: none;
+        }
+    </style>
+
+</head>
+<body>
+    <div class="outter">
+        <div class="left_in">
+
+            <div class="menu">
+                <div class="menu_title">Menue one</div>
+                <div class="menu_content">menue content 1</div>
+                <div class="menu_content">menue content 2</div>
+                <div class="menu_content">menue content 3</div>
+            </div>
+
+            <div class="menu">
+                <div class="menu_title">Menue two</div>
+                <div class="menu_content hide">menue content 1</div>
+                <div class="menu_content hide">menue content 2</div>
+                <div class="menu_content hide">menue content 3</div>
+            </div>
+
+            <div class="menu">
+                <div class="menu_title">menue third</div>
+                <div class="menu_content hide">menue content 1</div>
+                <div class="menu_content hide">menue content 2</div>
+                <div class="menu_content hide">menue content 3</div>
+            </div>
+
+
+        </div>
+
+        <div class="right_in">
+            <h1>I am the content of this article!</h1>
+        </div>
+    </div>
+
+    <script src="jspLibs/jquery-1.12.4.js"></script>
+    <script>
+
+        //使用jquery的方法绑定事件时不用传递this参数，直接就可以使用this，代表当前产生事件的标签
+        $('.menu_title').click(
+            function () {
+                $(this).siblings().removeClass('hide');
+                $(this).parent().siblings().children('.menu_content').addClass('hide');
+        });
+
+        //使用普通函数捕捉事件时，需要从发生事件的标签传递this参数给函数，才能使得函数知道是哪个标签产生了事件
+//        function f(self) {
+//            $(self).siblings().removeClass('hide');
+//            $(self).parent().siblings().children('.menu_content').addClass('hide');
+//        };
+
+    </script>
+</body>
+</html>

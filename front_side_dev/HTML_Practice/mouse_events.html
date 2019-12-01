@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+    <form action="" id="form1">
+        <input type="text" name="username"/>
+        <input type="submit" value="submit"/>
+    </form>
+
+    <input type="text" id="inp1"/>
+    <button id="but1" >stop</button>
+    <script>
+//        setTimeout(timeout_test,4000);
+//        function timeout_test() {
+//            location.assign('http://www.baidu.com'); //重定向到其他页面
+//        };
+
+        var butEle = document.getElementById('but1');
+        var clock1;
+        butEle.onclick = function () {
+            clearInterval(clock1);
+            clock1 =undefined;
+        };
+
+        var inpEle = document.getElementById('inp1');
+        inpEle.onfocus = function () {
+            if (clock1 == undefined){
+                dis_time();
+                clock1 = setInterval(dis_time,2000);
+            };
+        };
+
+        function dis_time() {
+            var date_time = new Date();
+            inpEle.value = date_time.toLocaleString();
+        };
+
+        inpEle.onblur = function () {
+           inpEle.value = " ";
+        };
+
+//        function my_reload() {
+//            location.reload();
+//        };
+//        setInterval(my_reload,2000); //经过固定的时间间隔后自动刷新页面
+
+        var ele = document.getElementById('form1');
+        ele.onsubmit = function (e) {
+            alert('123');
+            e.preventDefault(); 
+            //表示执行完弹出框事件后，阻止默认的表单提交事件
+            e.stopPropagation(); 
+            //阻止事件向外层传播，表示阻止该事件触发父标签定义的函数，只触发本标签针对事件定义的函数
+        }
+        
+        //创建新标签，并放置到合适的位置
+        function create_ele() {
+            var ele = document.createElement('p');
+            ele.innerHTML = 'new p tag';
+            ele.style.color = 'blue'; //修改标签样式
+            ele.style.fontSize = '12px';
+            var p_ele = document.getElementsByClassName('div1')[0];
+            p_ele.append(ele); //把新建标签，添加到父标签内的最后一个位置
+        }
+        
+        function dele_ele() {
+            var p_ele = document.getElementsByClassName('div1')[0];
+            var ele = p_ele.getElementsByTagName('p')[0];
+            p_ele.removeChild(ele); //删除父标签下的该子标签
+        }
+        
+        function ch_ele() {
+            var img = document.createElement('img');
+            img.src = "tuzi.jpg";
+
+            var ele = document.getElementsByTagName('p')[0];
+            var p_ele = document.getElementsByClassName('div3')[0];
+
+            p_ele.replaceChild(img,ele); //用img标签替换ele标签
+        }
+
+
+
+    </script>
+</body>
+</html>
+
+
