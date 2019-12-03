@@ -1,10 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="926c32a9-9eb8-4b27-a1f8-fdd31e04cb70" name="Default" comment="fix a pokegame8 bug">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/gui_test/lunar_lander/lunar_lander.py" beforeDir="false" afterPath="$PROJECT_DIR$/gui_test/lunar_lander/lunar_lander.py" afterDir="false" />
-    </list>
+    <list default="true" id="926c32a9-9eb8-4b27-a1f8-fdd31e04cb70" name="Default" comment="fix a pokegame8 bug" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -722,14 +719,13 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="230" y="7" width="1506" height="1013" extended-state="0" />
-    <editor active="true" />
     <layout>
       <window_info anchor="bottom" id="TODO" order="9" weight="0.3286219" />
       <window_info anchor="bottom" id="Event Log" order="7" sideWeight="0.5062201" side_tool="true" weight="0.29058823" />
       <window_info anchor="bottom" id="Database Changes" order="12" show_stripe_button="false" />
       <window_info anchor="bottom" id="Version Control" order="8" weight="0.32941177" />
       <window_info anchor="bottom" x="263" y="283" width="1045" height="180" id="Python Console" order="10" type="WINDOWED" weight="0.3254973" />
-      <window_info active="true" anchor="bottom" id="Run" order="2" sideWeight="0.4937799" visible="true" weight="0.47882354" />
+      <window_info anchor="bottom" id="Run" order="2" sideWeight="0.4937799" weight="0.33411765" />
       <window_info anchor="bottom" id="Terminal" order="6" sideWeight="0.4937799" weight="0.28619528" />
       <window_info content_ui="combo" id="Project" order="0" sideWeight="0.47545218" visible="true" weight="0.17012449" />
       <window_info anchor="bottom" id="Docker" order="11" show_stripe_button="false" />
