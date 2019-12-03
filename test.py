@@ -3085,6 +3085,8 @@ xml_text = '''
 # pickle.dump(data,f)
 # f.close()
 
+<<<<<<< HEAD
+=======
 # print('hello world')
 
 # import pygame
@@ -3220,3 +3222,4 @@ xml_text = '''
 suit_dict = {'diamonds':2, 'hearts':1, 'spades':3, 'clubs':0}
 max_suit = max(suit_dict,key=lambda suit:suit_dict[suit])
 print(max_suit) # spades
+>>>>>>> 14f312767054a48ba69a7e2d045cb83348118d2b

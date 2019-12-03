@@ -20,7 +20,11 @@ pygame.init()
 
 delay = 50
 interval = 20
+<<<<<<< HEAD
+# pygame.key.set_repeat(delay,interval)
+=======
 pygame.key.set_repeat(delay,interval)
+>>>>>>> 14f312767054a48ba69a7e2d045cb83348118d2b
 
 size = (640,480)
 screen = pygame.display.set_mode(size)
