@@ -3,6 +3,7 @@
   <component name="ChangeListManager">
     <list default="true" id="926c32a9-9eb8-4b27-a1f8-fdd31e04cb70" name="Default" comment="fix a pokegame8 bug">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/gui_test/lunar_lander/lunar_lander.py" beforeDir="false" afterPath="$PROJECT_DIR$/gui_test/lunar_lander/lunar_lander.py" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -55,6 +56,7 @@
     <SUITE FILE_PATH="coverage/codewars$fit_transfer.coverage" NAME="fit_transfer Coverage Results" MODIFIED="1562154270736" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/AI/machine_learning" />
     <SUITE FILE_PATH="coverage/codewars$DNA.coverage" NAME="DNA Coverage Results" MODIFIED="1528631278571" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/codewars$merge_sort.coverage" NAME="merge_sort Coverage Results" MODIFIED="1548081316528" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/codewars$lunar_lander.coverage" NAME="lunar_lander Coverage Results" MODIFIED="1575389354773" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/gui_test/lunar_lander" />
     <SUITE FILE_PATH="coverage/codewars$client.coverage" NAME="client Coverage Results" MODIFIED="1531840402830" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/selector_FTP/client" />
     <SUITE FILE_PATH="coverage/codewars$using_numpy.coverage" NAME="using_numpy Coverage Results" MODIFIED="1556023540387" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/AI/data_analysis" />
     <SUITE FILE_PATH="coverage/codewars$test_recursive.coverage" NAME="test_recursive Coverage Results" MODIFIED="1536675588773" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
@@ -246,11 +248,20 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="mypokegame.py" pinned="false" current-in-tab="true">
+      <file leaf-file-name="mypokegame.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/lnpygame/mypokegame.py">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="173">
               <caret line="283" column="40" selection-start-line="283" selection-start-column="40" selection-end-line="283" selection-end-column="40" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="lunar_lander.py" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/gui_test/lunar_lander/lunar_lander.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="200">
+              <caret line="79" column="60" selection-start-line="79" selection-start-column="60" selection-end-line="79" selection-end-column="60" />
             </state>
           </provider>
         </entry>
@@ -356,7 +367,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/learning_redis/usingpool.py" />
         <option value="$PROJECT_DIR$/AI/deep_learning/captocha_input.py" />
         <option value="$PROJECT_DIR$/learning_redis/usingredis.py" />
         <option value="$PROJECT_DIR$/net_spider/download_ppt.py" />
@@ -407,6 +417,7 @@
         <option value="$PROJECT_DIR$/gui_test/test_pyqt/myc2f.py" />
         <option value="$PROJECT_DIR$/test.py" />
         <option value="$PROJECT_DIR$/lnpygame/mypokegame.py" />
+        <option value="$PROJECT_DIR$/gui_test/lunar_lander/lunar_lander.py" />
       </list>
     </option>
   </component>
@@ -442,6 +453,24 @@
             <path>
               <item name="codewars" type="b2602c69:ProjectViewProjectNode" />
               <item name="codewars" type="462c0819:PsiDirectoryNode" />
+              <item name="gui_test" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="codewars" type="b2602c69:ProjectViewProjectNode" />
+              <item name="codewars" type="462c0819:PsiDirectoryNode" />
+              <item name="gui_test" type="462c0819:PsiDirectoryNode" />
+              <item name="lunar_lander" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="codewars" type="b2602c69:ProjectViewProjectNode" />
+              <item name="codewars" type="462c0819:PsiDirectoryNode" />
+              <item name="gui_test" type="462c0819:PsiDirectoryNode" />
+              <item name="lunar_lander" type="462c0819:PsiDirectoryNode" />
+              <item name="lunar_lander.py" type="8704e2dd:PyFileNode" />
+            </path>
+            <path>
+              <item name="codewars" type="b2602c69:ProjectViewProjectNode" />
+              <item name="codewars" type="462c0819:PsiDirectoryNode" />
               <item name="lnpygame" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
@@ -466,19 +495,19 @@
     <property name="settings.editor.selected.configurable" value="settings.github" />
   </component>
   <component name="RecentsManager">
-    <key name="MoveFile.RECENT_KEYS">
-      <recent name="F:\PycharmProjects\codewars\gui_test\test_pyqt" />
-      <recent name="F:\PycharmProjects\codewars\test_pyqt5" />
-      <recent name="F:\PycharmProjects\codewars\gui_test\PyPong" />
-      <recent name="F:\PycharmProjects\codewars\gui_test" />
-      <recent name="E:\PycharmProjects\codewars\hack_related" />
-    </key>
     <key name="CopyFile.RECENT_KEYS">
       <recent name="F:\PycharmProjects\codewars\gui_test" />
       <recent name="F:\PycharmProjects\codewars\gui_test\images" />
       <recent name="E:\PycharmProjects\codewars\gui_test\images" />
       <recent name="E:\PycharmProjects\codewars\gui_test" />
       <recent name="E:\PycharmProjects\codewars" />
+    </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="F:\PycharmProjects\codewars\gui_test" />
+      <recent name="F:\PycharmProjects\codewars\gui_test\test_pyqt" />
+      <recent name="F:\PycharmProjects\codewars\test_pyqt5" />
+      <recent name="F:\PycharmProjects\codewars\gui_test\PyPong" />
+      <recent name="E:\PycharmProjects\codewars\hack_related" />
     </key>
   </component>
   <component name="RunDashboard">
@@ -493,7 +522,26 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Python.mypokegame">
+  <component name="RunManager" selected="Python.lunar_lander">
+    <configuration name="lunar_lander" type="PythonConfigurationType" factoryName="Python" temporary="true">
+      <module name="codewars" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/gui_test/lunar_lander" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/gui_test/lunar_lander/lunar_lander.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+    </configuration>
     <configuration name="myc2f" type="PythonConfigurationType" factoryName="Python" temporary="true">
       <module name="codewars" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -589,25 +637,6 @@
       <option name="EMULATE_TERMINAL" value="false" />
       <option name="MODULE_MODE" value="false" />
     </configuration>
-    <configuration name="testbutton" type="PythonConfigurationType" factoryName="Python" temporary="true">
-      <module name="codewars" />
-      <option name="INTERPRETER_OPTIONS" value="" />
-      <option name="PARENT_ENVS" value="true" />
-      <envs>
-        <env name="PYTHONUNBUFFERED" value="1" />
-      </envs>
-      <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/gui_test/test_pyqt" />
-      <option name="IS_MODULE_SDK" value="true" />
-      <option name="ADD_CONTENT_ROOTS" value="true" />
-      <option name="ADD_SOURCE_ROOTS" value="true" />
-      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/gui_test/test_pyqt/testbutton.py" />
-      <option name="PARAMETERS" value="" />
-      <option name="SHOW_COMMAND_LINE" value="false" />
-      <option name="EMULATE_TERMINAL" value="false" />
-      <option name="MODULE_MODE" value="false" />
-    </configuration>
     <configuration default="true" type="tests" factoryName="Attests">
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
@@ -639,18 +668,18 @@
     <list>
       <item itemvalue="Python.test" />
       <item itemvalue="Python.test_connect" />
-      <item itemvalue="Python.testbutton" />
       <item itemvalue="Python.test_label" />
       <item itemvalue="Python.myc2f" />
       <item itemvalue="Python.mypokegame" />
+      <item itemvalue="Python.lunar_lander" />
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="Python.lunar_lander" />
         <item itemvalue="Python.mypokegame" />
         <item itemvalue="Python.myc2f" />
         <item itemvalue="Python.test_label" />
         <item itemvalue="Python.test_connect" />
-        <item itemvalue="Python.testbutton" />
       </list>
     </recent_temporary>
   </component>
@@ -700,7 +729,7 @@
       <window_info anchor="bottom" id="Database Changes" order="12" show_stripe_button="false" />
       <window_info anchor="bottom" id="Version Control" order="8" weight="0.32941177" />
       <window_info anchor="bottom" x="263" y="283" width="1045" height="180" id="Python Console" order="10" type="WINDOWED" weight="0.3254973" />
-      <window_info anchor="bottom" id="Run" order="2" sideWeight="0.4937799" weight="0.47882354" />
+      <window_info active="true" anchor="bottom" id="Run" order="2" sideWeight="0.4937799" visible="true" weight="0.47882354" />
       <window_info anchor="bottom" id="Terminal" order="6" sideWeight="0.4937799" weight="0.28619528" />
       <window_info content_ui="combo" id="Project" order="0" sideWeight="0.47545218" visible="true" weight="0.17012449" />
       <window_info anchor="bottom" id="Docker" order="11" show_stripe_button="false" />
@@ -757,13 +786,6 @@
     </breakpoint-manager>
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/lnpygame/testrect.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state>
-          <caret selection-end-line="5" selection-end-column="37" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/lnpygame/testimage.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="82">
@@ -1060,6 +1082,13 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="173">
           <caret line="283" column="40" selection-start-line="283" selection-start-column="40" selection-end-line="283" selection-end-column="40" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/gui_test/lunar_lander/lunar_lander.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="200">
+          <caret line="79" column="60" selection-start-line="79" selection-start-column="60" selection-end-line="79" selection-end-column="60" />
         </state>
       </provider>
     </entry>
