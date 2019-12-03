@@ -249,8 +249,8 @@
       <file leaf-file-name="mypokegame.py" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/lnpygame/mypokegame.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="561">
-              <caret line="283" column="40" lean-forward="true" selection-start-line="283" selection-start-column="40" selection-end-line="283" selection-end-column="40" />
+            <state relative-caret-position="173">
+              <caret line="283" column="40" selection-start-line="283" selection-start-column="40" selection-end-line="283" selection-end-column="40" />
             </state>
           </provider>
         </entry>
@@ -432,7 +432,6 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -454,6 +453,7 @@
           <select />
         </subPane>
       </pane>
+      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -698,11 +698,11 @@
       <window_info anchor="bottom" id="TODO" order="9" weight="0.3286219" />
       <window_info anchor="bottom" id="Event Log" order="7" sideWeight="0.5062201" side_tool="true" weight="0.29058823" />
       <window_info anchor="bottom" id="Database Changes" order="12" show_stripe_button="false" />
-      <window_info anchor="bottom" id="Version Control" order="8" />
+      <window_info anchor="bottom" id="Version Control" order="8" weight="0.32941177" />
       <window_info anchor="bottom" x="263" y="283" width="1045" height="180" id="Python Console" order="10" type="WINDOWED" weight="0.3254973" />
       <window_info anchor="bottom" id="Run" order="2" sideWeight="0.4937799" weight="0.47882354" />
       <window_info anchor="bottom" id="Terminal" order="6" sideWeight="0.4937799" weight="0.28619528" />
-      <window_info content_ui="combo" id="Project" order="0" sideWeight="0.47545218" visible="true" weight="0.2033195" />
+      <window_info content_ui="combo" id="Project" order="0" sideWeight="0.47545218" visible="true" weight="0.17012449" />
       <window_info anchor="bottom" id="Docker" order="11" show_stripe_button="false" />
       <window_info anchor="right" id="Database" order="4" sideWeight="0.49909583" weight="0.3291866" />
       <window_info anchor="right" id="SciView" order="3" sideWeight="0.4972875" weight="0.73447347" />
@@ -1058,8 +1058,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/lnpygame/mypokegame.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="561">
-          <caret line="283" column="40" lean-forward="true" selection-start-line="283" selection-start-column="40" selection-end-line="283" selection-end-column="40" />
+        <state relative-caret-position="173">
+          <caret line="283" column="40" selection-start-line="283" selection-start-column="40" selection-end-line="283" selection-end-column="40" />
         </state>
       </provider>
     </entry>
