@@ -77,6 +77,8 @@ def dis_final():
     游戏结束后显示的信息
     :return:
     '''
+    pygame.draw.rect(screen, [0, 0, 0], [5, 5, 350, 280], 0)
+
     final1 = "Game over"
     f1_font = pygame.font.Font(None, 70)
     f1_surf = f1_font.render(final1, 1, (255, 255, 255))
@@ -105,7 +107,6 @@ def dis_final():
     f4_surf = f4_font.render(final4, 1, (255, 255, 255))
     screen.blit(f4_surf, [20, 180])
 
-    pygame.draw.rect(screen,[0,0,0],[5,5,350,280],0)
     pygame.display.flip()
 
 def dis_flames():

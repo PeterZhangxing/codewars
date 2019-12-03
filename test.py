@@ -3085,3 +3085,141 @@ xml_text = '''
 # pickle.dump(data,f)
 # f.close()
 
+<<<<<<< HEAD
+=======
+# print('hello world')
+
+# import pygame
+#
+# pygame.init()
+# screen = pygame.display.set_mode([640,480])
+# screen.fill([255,255,255])
+#
+# pygame.time.delay(2000)
+# pygame.quit()
+
+# from PyQt5.QtWidgets import *
+# from PyQt5.QtCore import Qt
+# import sys
+#
+# class MyTestQ(QWidget):
+#
+#     def __init__(self):
+#         super().__init__()
+#
+#         self.resize(300,240)
+#         self.setWindowTitle('first window')
+#
+#         layout = QVBoxLayout()
+#         self.button = QPushButton('button1')
+#         self.label = QLabel('test')
+#         self.label.setAlignment(Qt.AlignCenter)
+#
+#         layout.addWidget(self.label)
+#         layout.addWidget(self.button)
+#
+#         self.setLayout(layout)
+#
+# app = QApplication(sys.argv)
+# mytest = MyTestQ()
+# mytest.show()
+# sys.exit(app.exec_())
+
+# def find_letter_location(letter,tar_str):
+#     location = []
+#     for i,v in enumerate(tar_str):
+#         if v == letter:
+#             location.append(i)
+#     return location
+#
+# def replace_letters(tar_str,location,letter):
+#     final_str_li = []
+#     for i,v in enumerate(tar_str):
+#         if i in location:
+#             final_str_li.append(letter)
+#         else:
+#             final_str_li.append(v)
+#     final_str = ''.join(final_str_li)
+#     return final_str
+#
+# def replace_letters2(tar_str,location,letter):
+#     final_str = ''
+#     for i,v in enumerate(tar_str):
+#         if i in location:
+#             final_str += letter
+#         else:
+#             final_str += v
+#     return final_str
+#
+# res_loc = find_letter_location('e','level')
+# print(res_loc)
+#
+# res2 = replace_letters2('----l',res_loc,'e')
+# print(res2)
+
+# p_info = {'name':'zx','age':12,'gender':'Male','occupation':'superman'}
+# pinfo_len = len(p_info)
+# with open('pinfo.txt','w',encoding='utf-8') as f:
+#     i = 0
+#     for k,v in p_info.items():
+#         if i == pinfo_len - 1:
+#             f.write('%s:%s'%(k,v))
+#         else:
+#             f.write('%s:%s\n'%(k,v))
+#             i += 1
+
+# import pickle
+# f = open('pickle_tmp.pkl','wb')
+# pickle.dump(p_info,f)
+# f.close()
+#
+# f = open('pickle_tmp.pkl','rb')
+# res = pickle.load(f)
+# print(res)
+# f.close()
+
+# import random
+# import time
+#
+# count = 1
+# while True:
+#     if count == 10:
+#         break
+#     print(random.randint(1,3))
+#     time.sleep(2)
+#     count += 1
+
+# import random
+#
+# li = [ 0 for i in range(13) ]
+# print(li)
+#
+# for i in range(1000):
+#     one_v = random.randint(1,6)
+#     two_v = random.randint(1,6)
+#     total_v = one_v + two_v
+#     li[total_v] += 1
+#
+# for i in range(2,len(li)):
+#     print('%s appeared %s %.2f%%'%(i,li[i],li[i]/1000*100))
+
+# poke_dict = {'D':2,'S':1,'H':1,'B':0}
+# max_value_index = max(poke_dict,key=lambda key:poke_dict[key])
+# print(max_value_index)
+
+# cards_dict = {'Diamonds':2,'Hearts':1,'Spades':1,'Clubs':0}
+# res = max(cards_dict,key=lambda x:cards_dict[x])
+# ordered = sorted(cards_dict,key=lambda x:cards_dict[x])
+# print(res)
+# print(ordered)
+
+# import random
+#
+# li = [1,2,3,4,5,6,7,8]
+# res = random.choices(li,k=3)
+# print(res)
+
+suit_dict = {'diamonds':2, 'hearts':1, 'spades':3, 'clubs':0}
+max_suit = max(suit_dict,key=lambda suit:suit_dict[suit])
+print(max_suit) # spades
+>>>>>>> 14f312767054a48ba69a7e2d045cb83348118d2b
