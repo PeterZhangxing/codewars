@@ -3085,8 +3085,6 @@ xml_text = '''
 # pickle.dump(data,f)
 # f.close()
 
-<<<<<<< HEAD
-=======
 # print('hello world')
 
 # import pygame
@@ -3219,7 +3217,57 @@ xml_text = '''
 # res = random.choices(li,k=3)
 # print(res)
 
-suit_dict = {'diamonds':2, 'hearts':1, 'spades':3, 'clubs':0}
-max_suit = max(suit_dict,key=lambda suit:suit_dict[suit])
-print(max_suit) # spades
->>>>>>> 14f312767054a48ba69a7e2d045cb83348118d2b
+# suit_dict = {'diamonds':2, 'hearts':1, 'spades':3, 'clubs':0}
+# max_suit = max(suit_dict,key=lambda suit:suit_dict[suit])
+# print(max_suit) # spades
+
+# import datetime
+#
+# when = datetime.datetime(2017,12,1,12,1,1)
+# print(when)
+# print(when.year,when.month,when.time())
+# print(type(when.year),type(when.time()))
+#
+# when2 = datetime.datetime(hour=10, year=2012, minute=45, month=10,second=56, day=24)
+# print(when2)
+# print(when2.ctime()) # 打印字符串版本的时间
+# print(type(when2.ctime()))
+#
+# today = datetime.date(2019,12,4)
+# print(today)
+# some_time = datetime.time(10,11,12)
+# print(some_time)
+# # 将日期对象和时间对象合并成日期时间对象
+# when3 = datetime.datetime.combine(today, some_time)
+# print(when3)
+#
+# now = datetime.datetime.now()
+# print(now)
+#
+# yesterday = datetime.datetime(2012, 10, 23)
+# tomorrow = datetime.datetime(2012, 10, 25)
+# difference = tomorrow - yesterday # 获取时间差对象，a timedelta object only has days,seconds,microseconds
+# print(difference)
+# print(type(difference))
+#
+# delta_time = datetime.timedelta(3,3600)
+# f4d = now + delta_time
+# print(f4d.strftime('%Y_%m_%d::%H-%M-%S'))
+
+import datetime
+import os
+import pickle
+
+first_time = True
+if os.path.isfile('last_run.pkl'):
+    with open('last_run.pkl','rb') as f:
+        last_time = pickle.load(f)
+    print("The last time this program was run was ", last_time)
+    first_time = False
+
+with open('last_run.pkl','wb') as f:
+    now = datetime.datetime.now()
+    pickle.dump(now,f)
+
+if first_time:
+    print("Created new pickle file.")

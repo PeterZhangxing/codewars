@@ -1,6 +1,5 @@
 import pygame
 
-
 pygame.init()
 
 # initiate screen background and game loop clock
