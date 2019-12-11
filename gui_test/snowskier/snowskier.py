@@ -1,5 +1,6 @@
 import pygame
 
+
 skier_images = [
     "skier_down.png",
     "skier_right1.png",
