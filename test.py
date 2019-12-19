@@ -3254,20 +3254,46 @@ xml_text = '''
 # f4d = now + delta_time
 # print(f4d.strftime('%Y_%m_%d::%H-%M-%S'))
 
-import datetime
-import os
-import pickle
+# import datetime
+# import os
+# import pickle
+#
+# first_time = True
+# if os.path.isfile('last_run.pkl'):
+#     with open('last_run.pkl','rb') as f:
+#         last_time = pickle.load(f)
+#     print("The last time this program was run was ", last_time)
+#     first_time = False
+#
+# with open('last_run.pkl','wb') as f:
+#     now = datetime.datetime.now()
+#     pickle.dump(now,f)
+#
+# if first_time:
+#     print("Created new pickle file.")
 
-first_time = True
-if os.path.isfile('last_run.pkl'):
-    with open('last_run.pkl','rb') as f:
-        last_time = pickle.load(f)
-    print("The last time this program was run was ", last_time)
-    first_time = False
+# import jieba
+#
+# string = '这是一个好吃的积极'
+# word_iter = jieba.cut(string,True)
+#
+# for word in word_iter:
+#     print(word)
 
-with open('last_run.pkl','wb') as f:
-    now = datetime.datetime.now()
-    pickle.dump(now,f)
+# from fdfs_client.client import Fdfs_client
+# # client = Fdfs_client('/root/PycharmProjects/codewars/client.conf')
+# client = Fdfs_client('./client.conf')
+# ret = client.upload_by_filename('test.yml')
+# print(ret.get('Status'))
+# # print(ret)
+# '''
+# {
+#     'Group name': 'group1',
+#     'Remote file_id': 'group1/M00/00/00/CgEBgF37eY6ARygoAAAAWqo1Fuk965.yml',
+#     'Status': 'Upload successed.',
+#     'Local file name': 'test.yml',
+#     'Uploaded size': '90B',
+#     'Storage IP': '10.1.1.128'
+# }
+# '''
 
-if first_time:
-    print("Created new pickle file.")
