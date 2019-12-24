@@ -3,6 +3,7 @@
   <component name="ChangeListManager">
     <list default="true" id="18f01e30-48de-4bd8-a579-a58613e9120f" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/gui_test/test_pyqt/test_geometry.py" beforeDir="false" afterPath="$PROJECT_DIR$/gui_test/test_pyqt/test_geometry.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -32,7 +33,7 @@
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
   </component>
-  <component name="RunManager" selected="Python.test_geometry">
+  <component name="RunManager" selected="Python.test_cursor">
     <configuration name="f_slot_signal" type="PythonConfigurationType" factoryName="Python" temporary="true">
       <module name="codewars" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -47,6 +48,28 @@
       <option name="ADD_SOURCE_ROOTS" value="true" />
       <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
       <option name="SCRIPT_NAME" value="$PROJECT_DIR$/gui_test/test_pyqt/f_slot_signal.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
+    <configuration name="test_cursor" type="PythonConfigurationType" factoryName="Python" temporary="true">
+      <module name="codewars" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/gui_test/test_pyqt" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/gui_test/test_pyqt/test_cursor.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
@@ -101,6 +124,7 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Python.test_cursor" />
         <item itemvalue="Python.test_geometry" />
         <item itemvalue="Python.test_timer" />
         <item itemvalue="Python.f_slot_signal" />
@@ -131,7 +155,9 @@
       <updated>1576766065086</updated>
       <workItem from="1576766068240" duration="1561000" />
       <workItem from="1576990171313" duration="5836000" />
-      <workItem from="1577101657409" duration="4576000" />
+      <workItem from="1577101657409" duration="6098000" />
+      <workItem from="1577184034429" duration="1253000" />
+      <workItem from="1577186122024" duration="7588000" />
     </task>
     <servers />
   </component>
@@ -139,26 +165,27 @@
     <option name="version" value="1" />
   </component>
   <component name="WindowStateProjectService">
-    <state width="1632" height="256" key="GridCell.Tab.0.bottom" timestamp="1577113388490">
+    <state width="1632" height="256" key="GridCell.Tab.0.bottom" timestamp="1577198137230">
       <screen x="0" y="27" width="1680" height="1023" />
     </state>
-    <state width="1632" height="256" key="GridCell.Tab.0.bottom/0.27.1680.1023@0.27.1680.1023" timestamp="1577113388490" />
-    <state width="1632" height="256" key="GridCell.Tab.0.center" timestamp="1577113388487">
+    <state width="1632" height="256" key="GridCell.Tab.0.bottom/0.27.1680.1023@0.27.1680.1023" timestamp="1577198137230" />
+    <state width="1632" height="256" key="GridCell.Tab.0.center" timestamp="1577198137227">
       <screen x="0" y="27" width="1680" height="1023" />
     </state>
-    <state width="1632" height="256" key="GridCell.Tab.0.center/0.27.1680.1023@0.27.1680.1023" timestamp="1577113388487" />
-    <state width="1632" height="256" key="GridCell.Tab.0.left" timestamp="1577113388486">
+    <state width="1632" height="256" key="GridCell.Tab.0.center/0.27.1680.1023@0.27.1680.1023" timestamp="1577198137227" />
+    <state width="1632" height="256" key="GridCell.Tab.0.left" timestamp="1577198137226">
       <screen x="0" y="27" width="1680" height="1023" />
     </state>
-    <state width="1632" height="256" key="GridCell.Tab.0.left/0.27.1680.1023@0.27.1680.1023" timestamp="1577113388486" />
-    <state width="1632" height="256" key="GridCell.Tab.0.right" timestamp="1577113388489">
+    <state width="1632" height="256" key="GridCell.Tab.0.left/0.27.1680.1023@0.27.1680.1023" timestamp="1577198137226" />
+    <state width="1632" height="256" key="GridCell.Tab.0.right" timestamp="1577198137228">
       <screen x="0" y="27" width="1680" height="1023" />
     </state>
-    <state width="1632" height="256" key="GridCell.Tab.0.right/0.27.1680.1023@0.27.1680.1023" timestamp="1577113388489" />
+    <state width="1632" height="256" key="GridCell.Tab.0.right/0.27.1680.1023@0.27.1680.1023" timestamp="1577198137228" />
   </component>
   <component name="com.intellij.coverage.CoverageDataManagerImpl">
-    <SUITE FILE_PATH="coverage/codewars$test_geometry.coverage" NAME="test_geometry Coverage Results" MODIFIED="1577113388463" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/gui_test/test_pyqt" />
+    <SUITE FILE_PATH="coverage/codewars$test_geometry.coverage" NAME="test_geometry Coverage Results" MODIFIED="1577114872454" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/gui_test/test_pyqt" />
     <SUITE FILE_PATH="coverage/codewars$test_timer.coverage" NAME="test_timer Coverage Results" MODIFIED="1577008067769" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/gui_test/test_pyqt" />
     <SUITE FILE_PATH="coverage/codewars$f_slot_signal.coverage" NAME="f_slot_signal Coverage Results" MODIFIED="1576767598752" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/gui_test/test_pyqt" />
+    <SUITE FILE_PATH="coverage/codewars$test_cursor.coverage" NAME="test_cursor Coverage Results" MODIFIED="1577198137203" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/gui_test/test_pyqt" />
   </component>
 </project>

@@ -10,6 +10,8 @@ class MyWindow(QWidget):
 
         self.setMinimumSize(300,300)
         self.setMaximumSize(600,600)
+        # self.move(0,0)
+        # self.setGeometry(0,0,300,300)
 
         self.total_widgets = 9
         self.col = 3
@@ -20,6 +22,8 @@ class MyWindow(QWidget):
         my_button_width = self.width() // self.col
         total_rows = (self.total_widgets - 1) // self.col + 1
         my_button_height = self.height() // total_rows
+
+        print(self.frameGeometry())
         # print(self.width())
         # print(self.height())
         # print(self.geometry().width())
@@ -41,5 +45,8 @@ if __name__ == '__main__':
 
     mywindow = MyWindow()
     mywindow.show()
+    mywindow.setGeometry(-10,-200,300,300)
+    print(mywindow.frameSize())
+    print(mywindow.frameGeometry())
 
     sys.exit(app.exec_())
