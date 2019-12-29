@@ -14,8 +14,8 @@ class MyWindow(QWidget):
         self.init_gui()
 
     def init_gui(self):
-        self.btn_width = 60
-        self.btn_height = 35
+        self.btn_width = 40
+        self.btn_height = 20
         self.btn_y = 5
 
         self.close_btn = QPushButton(self)
@@ -49,7 +49,7 @@ class MyWindow(QWidget):
         max_btn_x = close_btn_x - self.max_btn.width()
         self.max_btn.move(max_btn_x,self.btn_y)
 
-        min_btn_x = max_btn_x -self.min_btn.width()
+        min_btn_x = max_btn_x - self.min_btn.width()
         self.min_btn.move(min_btn_x,self.btn_y)
 
     def mousePressEvent(self, QMouseEvent):
