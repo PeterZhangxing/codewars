@@ -13,6 +13,8 @@ class MyMainWindow(QMainWindow):
 
     def init_gui(self):
         self.setStatusTip('this is a window')
+        self.setToolTip('a main window')
+        self.setToolTipDuration(1000)
 
         self.label = QLabel(self)
         self.label.setText('mother fucker')
@@ -29,5 +31,9 @@ if __name__ == '__main__':
 
     mywindow = MyMainWindow()
     mywindow.show()
+
+    print(mywindow.label.toolTip())
+    print(mywindow.label.toolTipDuration())
+    print(mywindow.statusTip())
 
     sys.exit(app.exec_())

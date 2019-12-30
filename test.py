@@ -3297,3 +3297,7 @@ xml_text = '''
 # }
 # '''
 
+import datetime
+
+res = order_id = 'test_alipay_%s'%datetime.datetime.now().strftime("%Y%m%D%H%M%S")
+print(res)
