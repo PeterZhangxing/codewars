@@ -58,7 +58,7 @@ class MyWindow(QWidget):
         # self.tbtn.setPopupMode(QToolButton.DelayedPopup)
         self.tbtn.setPopupMode(QToolButton.MenuButtonPopup)
         # this slot will be triggered when you clicked any menu related to this tool button
-        self.tbtn.triggered.connect(lambda action:print('total_action'))
+        self.tbtn.triggered.connect(lambda action:print('total_action:',action.data()))
 
         # Qt.NoArrow
         # 	无箭头
@@ -96,12 +96,15 @@ class MyWindow(QWidget):
 
         myaction1 = QAction(QIcon("images/right.png"), 'new_file',self.menu)
         myaction1.triggered.connect(lambda :print('new_file'))
+        myaction1.setData('new_file')
 
         myaction2 = QAction(QIcon("images/right2.png"), 'open_file',self.menu)
         myaction2.triggered.connect(lambda: print('open_file'))
+        myaction2.setData('open_file')
 
         myaction3 = QAction(QIcon("images/right3.png"), 'exit_file',self.menu)
         myaction3.triggered.connect(lambda: print('exit_programme'))
+        myaction3.setData('exit_programme')
 
         self.menu.addAction(myaction1)
         self.menu.addAction(myaction2)
@@ -120,6 +123,7 @@ class MyWindow(QWidget):
     #     # this method will be triggered when click the right button of your mouse
     #     self.show_window_file_menu()
     #     self.menu.exec_(QContextMenuEvent.globalPos())
+
 
 if __name__ == '__main__':
     import sys

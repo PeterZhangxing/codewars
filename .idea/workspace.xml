@@ -3,6 +3,7 @@
   <component name="ChangeListManager">
     <list default="true" id="18f01e30-48de-4bd8-a579-a58613e9120f" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/gui_test/test_pyqt/test_menu.py" beforeDir="false" afterPath="$PROJECT_DIR$/gui_test/test_pyqt/test_menu.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -186,6 +187,7 @@
       <workItem from="1577702422794" duration="6568000" />
       <workItem from="1577961092000" duration="5734000" />
       <workItem from="1578203441781" duration="7813000" />
+      <workItem from="1578213434929" duration="251000" />
     </task>
     <servers />
   </component>
@@ -224,7 +226,7 @@
     <SUITE FILE_PATH="coverage/codewars$drag_window.coverage" NAME="drag_window Coverage Results" MODIFIED="1577284189567" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/gui_test/test_pyqt" />
     <SUITE FILE_PATH="coverage/codewars$test_keyevent.coverage" NAME="test_keyevent Coverage Results" MODIFIED="1577284647121" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/gui_test/test_pyqt" />
     <SUITE FILE_PATH="coverage/codewars$test_paintevent.coverage" NAME="test_paintevent Coverage Results" MODIFIED="1577609624180" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/gui_test/test_pyqt" />
-    <SUITE FILE_PATH="coverage/codewars$test_menu.coverage" NAME="test_menu Coverage Results" MODIFIED="1578213175999" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/gui_test/test_pyqt" />
+    <SUITE FILE_PATH="coverage/codewars$test_menu.coverage" NAME="test_menu Coverage Results" MODIFIED="1578213599113" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/gui_test/test_pyqt" />
     <SUITE FILE_PATH="coverage/codewars$test_cursor.coverage" NAME="test_cursor Coverage Results" MODIFIED="1577198137203" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/gui_test/test_pyqt" />
     <SUITE FILE_PATH="coverage/codewars$test_raise.coverage" NAME="test_raise Coverage Results" MODIFIED="1577282081155" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/gui_test/test_pyqt" />
     <SUITE FILE_PATH="coverage/codewars$test_focus.coverage" NAME="test_focus Coverage Results" MODIFIED="1577610658034" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/gui_test/test_pyqt" />
