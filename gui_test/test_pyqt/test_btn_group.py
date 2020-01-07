@@ -50,6 +50,7 @@ class MyWindow(QWidget):
         print(QAbstractButton.isChecked())
         btnid = self.gender_rbtn_group.id(QAbstractButton)
         print(btnid)
+        print(self.sender().checkedId())
         # self.gender_rbtn_group.setExclusive(False)
         # self.gender_rbtn_group.removeButton(r_female)
         # print(self.gender_rbtn_group.buttons())
