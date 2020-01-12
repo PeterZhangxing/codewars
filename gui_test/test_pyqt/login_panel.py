@@ -15,12 +15,23 @@ class MyWindow(QWidget):
     def init_gui(self):
         self.name = QLineEdit(self)
         self.name.setToolTip('username')
+        self.name.setPlaceholderText('username')
         self.name.textChanged.connect(self.judge_content)
+
+        self.name_completer = QCompleter(['zx2005','hejia','zx'],self.name)
+        self.name.setCompleter(self.name_completer)
 
         self.pwd = QLineEdit(self)
         self.pwd.setToolTip('password')
-        self.pwd.setEchoMode(QLineEdit.PasswordEchoOnEdit)
+        self.pwd.setPlaceholderText('password')
+        self.pwd.setClearButtonEnabled(True)
+        self.pwd.setEchoMode(QLineEdit.Password)
         self.pwd.textChanged.connect(self.judge_content)
+
+        self.pwd_action = QAction(self.pwd)
+        self.pwd_action.setIcon(QIcon('images/up.png'))
+        self.pwd.addAction(self.pwd_action,QLineEdit.TrailingPosition)
+        self.pwd_action.triggered.connect(self.pwd_action_event)
 
         self.subtn = QPushButton('submit',self)
         self.subtn.resize(self.pwd.width(),self.pwd.height())
@@ -29,6 +40,14 @@ class MyWindow(QWidget):
         self.subtn.clicked.connect(self.test_login)
 
         self.tab = QLabel(self)
+
+    def pwd_action_event(self):
+        if self.pwd.echoMode() == QLineEdit.Normal:
+            self.pwd.setEchoMode(QLineEdit.Password)
+            self.pwd_action.setIcon(QIcon('images/down.png'))
+        else:
+            self.pwd.setEchoMode(QLineEdit.Normal)
+            self.pwd_action.setIcon(QIcon('images/up.png'))
 
     def judge_content(self):
         name = self.name.text()
