@@ -2,6 +2,16 @@ from PyQt5.QtWidgets import *
 from PyQt5.QtGui import *
 from PyQt5.QtCore import *
 
+class MyTextEdit(QTextEdit):
+    def mousePressEvent(self, me):
+        # QMouseEvent
+        print(me.pos())
+        link_addr = self.anchorAt(me.pos())
+        print(link_addr)
+        if link_addr:
+            QDesktopServices.openUrl(QUrl(link_addr))
+        return super(MyTextEdit, self).mousePressEvent(me)
+
 class MyWindow(QWidget):
     def __init__(self):
         super(MyWindow, self).__init__()
@@ -11,18 +21,19 @@ class MyWindow(QWidget):
 
     def init_gui(self):
         # te = QTextEdit("xxx", self)
-        te = QTextEdit(self)
+        te = MyTextEdit(self)
         self.te = te
         te.move(50, 100)
         te.resize(300, 300)
         te.setStyleSheet("background-color: cyan;")
         te.setPlaceholderText("waiting for input")
+        te.insertHtml("xxx " * 300 + "<a name='itcast' href='http://www.baidu.com'>撩课</a>" + "aaa" * 200)
 
         tcf = QTextCharFormat()
         tcf.setFontFamily("宋体")
         tcf.setToolTip('input content')
         tcf.setFontPointSize(10)
-        tcf.setFontCapitalization(QFont.Capitalize)
+        # tcf.setFontCapitalization(QFont.Capitalize)
         tcf.setForeground(QColor(0, 0, 255))
         tcf.setFontOverline(True)
         tcf.setFontUnderline(True)
@@ -32,6 +43,19 @@ class MyWindow(QWidget):
         test_btn.move(50, 10)
         test_btn.setText("测试按钮")
         test_btn.pressed.connect(self.btn_test)
+
+        self.te.textChanged.connect(self.text_change)
+        self.te.selectionChanged.connect(self.selection_change)
+        self.te.copyAvailable.connect(self.copy_a)
+
+    def text_change(self):
+        print("文本内容发生了改变")
+
+    def selection_change(self):
+        print("文本选中的内容发生了改变")
+
+    def copy_a(self, changed):
+        print("复制是否可用", changed)
 
     def btn_test(self):
         # 设置普通文本内容
@@ -113,11 +137,101 @@ class MyWindow(QWidget):
         # # tetc.setCharFormat(tcf)
         # tetc.mergeCharFormat(tcf)
 
-        tbf = QTextBlockFormat()
-        tbf.setIndent(2)
-        tbf.setAlignment(Qt.AlignCenter)
-        tbf.setBackground(QColor(255,0,0))
-        tetc.mergeBlockFormat(tbf)
+        # tbf = QTextBlockFormat()
+        # tbf.setIndent(2)
+        # tbf.setAlignment(Qt.AlignCenter)
+        # tbf.setBackground(QColor(255,0,0))
+        # tetc.mergeBlockFormat(tbf)
+
+        # print("是否在段落的结尾:", tetc.atBlockEnd())
+        # print("是否在段落的开始:", tetc.atBlockStart())
+        # print("是否在文档的结尾:", tetc.atEnd())
+        # print("是否在文档的开始:", tetc.atStart())
+        #
+        # print("在第几列", tetc.columnNumber())
+        # print("光标位置", tetc.position())
+        # print("在文本块中的位置", tetc.positionInBlock())
+
+        # tetc.deleteChar()
+        # tetc.deletePreviousChar()
+
+        # print(tetc.selectionStart())
+        # print(tetc.selectionEnd())
+        # # tetc.clearSelection()
+        # self.te.setTextCursor(tetc)
+        # print(tetc.hasSelection())
+        # tetc.removeSelectedText()
+        # self.te.setFocus()
+
+        # print(tetc.selectedText())
+        # print(tetc.selection().toPlainText())
+        # print(tetc.blockNumber())
+        # print(tetc.block().text())
+        # self.te.setFocus()
+
+        # tetc.setPosition(6, QTextCursor.KeepAnchor)
+        # tetc.movePosition(QTextCursor.Up, QTextCursor.KeepAnchor, 2)
+        # tetc.select(QTextCursor.WordUnderCursor)
+        # self.te.setTextCursor(tetc)
+        # self.te.setFocus()
+
+        # self.te.setAutoFormatting(QTextEdit.AutoBulletList)
+
+        # self.te.setLineWrapMode(QTextEdit.NoWrap)
+        # self.te.setLineWrapMode(QTextEdit.FixedPixelWidth)
+        # self.te.setLineWrapMode(QTextEdit.FixedColumnWidth)
+        # self.te.setLineWrapColumnOrWidth(8)
+        # self.te.setOverwriteMode(True)
+
+        # self.mytextcursor()
+
+        # self.te.setFontFamily("幼圆")
+        # self.te.setFontWeight(QFont.Black)
+        # self.te.setFontItalic(True)
+        # self.te.setFontPointSize(20)
+        # self.te.setFontUnderline(True)
+        #
+        # self.te.setTextBackgroundColor(QColor(255, 0, 0))
+        # self.te.setTextColor(QColor(0, 0, 255))
+        #
+        # myfont = QFont()
+        # myfont.setStrikeOut(True)
+        # self.te.setCurrentFont(myfont)
+
+        # tcf = QTextCharFormat()
+        # tcf.setFontFamily("宋体")
+        # tcf.setFontPointSize(20)
+        # tcf.setFontCapitalization(QFont.Capitalize)
+        # tcf.setForeground(QColor(100, 200, 150))
+        # self.te.setCurrentCharFormat(tcf)
+        #
+        # tcf2 = QTextCharFormat()
+        # tcf2.setBackground(QColor(0,255,0))
+        # tcf2.setFontStrikeOut(True)
+        # self.te.mergeCurrentCharFormat(tcf2)
+
+        # self.te.find('xx',QTextDocument.FindBackward|QTextDocument.FindCaseSensitively|QTextDocument.FindWholeWords)
+        # self.te.setFocus()
+
+        # self.te.scrollToAnchor('itcast')
+
+        # self.te.setReadOnly(True)
+        # self.te.insertPlainText("itlike")
+        # print(self.te.isReadOnly())
+
+        # self.te.setTabChangesFocus(True)
+        print(self.te.tabStopDistance())
+        print(self.te.tabStopWidth())
+        self.te.setTabStopDistance(100)
+
+    def mytextcursor(self):
+        if self.te.cursorWidth() > 1:
+            self.te.setCursorWidth(1)
+            self.te.setOverwriteMode(False)
+        else:
+            self.te.setCursorWidth(8)
+            self.te.setOverwriteMode(True)
+        self.te.setFocus()
 
 if __name__ == '__main__':
     import sys
