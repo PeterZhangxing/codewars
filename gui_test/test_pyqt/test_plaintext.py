@@ -49,6 +49,7 @@ class MyWindow(QWidget):
     def btn_test(self):
         # QTextCursor
         # QTextCursor.MoveOperation
+        QTextCursor.MoveMode
         # self.pte.updateRequest.connect(lambda rect,dy:print(dy))
         self.pte.updateRequest.connect(lambda rect,dy:self.line_num.move(self.line_num.x(),self.line_num.y()+dy))
         tc = self.pte.textCursor()
@@ -56,10 +57,13 @@ class MyWindow(QWidget):
         tc.insertText('xxx')
         tc_pos = tc.position()
         # print(tc_pos,type(tc_pos))
-        tc.setPosition(10)
-        self.pte.moveCursor(QTextCursor.StartOfBlock, QTextCursor.KeepAnchor)
+        tc.setPosition(10,QTextCursor.KeepAnchor)
+        self.pte.setTextCursor(tc)
+        # self.pte.moveCursor(QTextCursor.StartOfBlock, QTextCursor.KeepAnchor)
+        # self.pte.moveCursor(QTextCursor.StartOfBlock, QTextCursor.MoveAnchor)
         self.pte.setFocus()
         print(tc_pos, type(tc_pos))
+
 
 if __name__ == '__main__':
     import sys
