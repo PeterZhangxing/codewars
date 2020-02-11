@@ -28,6 +28,29 @@ class MyWindow(QWidget):
         # self.cw.activated.connect(lambda mydate:print('activated:',mydate))
         self.cw.selectionChanged.connect(lambda :print('selectionChanged:',self.cw.selectedDate()))
 
+        # self.cw.setNavigationBarVisible(False)
+        self.cw.setFirstDayOfWeek(Qt.Sunday)
+        self.cw.setGridVisible(True)
+
+        tcf = QTextCharFormat()
+        tcf.setFontFamily("隶书")
+        tcf.setFontPointSize(7)
+        tcf.setFontUnderline(True)
+        self.cw.setHeaderTextFormat(tcf)
+        # self.cw.setHorizontalHeaderFormat(QCalendarWidget.NoHorizontalHeader)
+        # self.cw.setVerticalHeaderFormat(QCalendarWidget.NoVerticalHeader)
+
+        t_tcf = QTextCharFormat()
+        t_tcf.setFontPointSize(18)
+        t_tcf.setUnderlineColor(QColor(0,0,255))
+        t_tcf.setFontUnderline(True)
+        t_tcf.setToolTip("这是星期二")
+        self.cw.setWeekdayTextFormat(Qt.Tuesday,t_tcf)
+        self.cw.setDateTextFormat(QDate.currentDate(), tcf)
+
+        # self.cw.setSelectionMode(QCalendarWidget.NoSelection)
+        # self.cw.setSelectedDate(QDate(2018, 12, 11))
+
         btn = QPushButton(self)
         btn.setText("按钮")
         btn.move(100, 300)
