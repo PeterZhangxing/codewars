@@ -137,9 +137,9 @@ class MyWindow3(QWidget):
         palette.setColor(QPalette.Background, color)
         self.setPalette(palette)
 
-class MyWindow(QWidget):
+class MyWindow4(QWidget):
     def __init__(self):
-        super(MyWindow, self).__init__()
+        super(MyWindow4, self).__init__()
         self.setWindowTitle('QDialog的学习')
         self.resize(500, 500)
         self.init_gui()
@@ -202,6 +202,69 @@ class MyWindow(QWidget):
 
     def get_file(self,file_name):
         print(file_name)
+
+class MyWindow(QWidget):
+    def __init__(self):
+        super(MyWindow, self).__init__()
+        self.setWindowTitle('QDialog的学习')
+        self.resize(500, 500)
+        self.init_gui()
+
+    def init_gui(self):
+        # self.qid = QInputDialog(self,Qt.FramelessWindowHint)
+        self.qid = QInputDialog(self)
+        self.qid.setWindowModality(Qt.WindowModal)
+        self.qid.setOptions(QInputDialog.UseListViewForComboBoxItems | QInputDialog.UsePlainTextEditForTextInput)
+
+        self.qid.setWindowTitle('test_input_dialog')
+        self.qid.setLabelText('hehe')
+        self.qid.setOkButtonText('OK')
+        self.qid.setCancelButtonText('Cancel')
+
+        # self.qid.setInputMode(QInputDialog.IntInput)
+        # self.qid.setIntValue(10)
+
+        # self.qid.setInputMode(QInputDialog.DoubleInput)
+        self.qid.setInputMode(QInputDialog.TextInput)
+
+        # self.qid.setIntRange(10,20)
+        # self.qid.setIntStep(2)
+        # self.qid.setDoubleStep(0.2)
+        # self.qid.setDoubleDecimals(3)
+        # self.qid.setDoubleRange(10.000,20.000)
+        # self.qid.show()
+        # self.qid.setComboBoxItems(['python','c++','java'])
+        # self.qid.setComboBoxEditable(True)
+
+        btn = QPushButton(self)
+        btn.setText("按钮")
+        btn.move(100, 100)
+        btn.clicked.connect(self.get_input)
+
+    def get_input(self):
+        # result = QInputDialog.getInt(self, "xxx1", "xxx2", 888, step=8)
+        # result = QInputDialog.getDouble(self, "xxx1", "xxx2", 888.88, decimals = 2)
+        # result = QInputDialog.getText(self, "xx1", "xx2", echo=QLineEdit.Password)
+        # ('', False)
+        # ('22213', True)
+
+        # result = QInputDialog.getMultiLineText(self, "xx1", "xx2", "default")
+
+        # result = QInputDialog.getItem(self, "xx1", "xx2", ["1", "2", "3"], 2, True)
+        # ('2', True)
+        # ('3', False)
+
+        # print(result)
+
+        # self.qid.intValueSelected.connect(lambda val:print("selected: ",val))
+        # self.qid.intValueChanged.connect(lambda val:print("changed: ",val))
+
+        # self.qid.doubleValueSelected.connect(lambda val:print("selected: ",val))
+        # self.qid.doubleValueChanged.connect(lambda val:print("changed: ",val))
+
+        self.qid.textValueSelected.connect(lambda val:print("selected: ",val))
+        self.qid.textValueChanged.connect(lambda val:print("changed: ",val))
+        self.qid.show()
 
 if __name__ == '__main__':
     import sys
