@@ -3,7 +3,6 @@
   <component name="ChangeListManager">
     <list default="true" id="18f01e30-48de-4bd8-a579-a58613e9120f" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/gui_test/test_pyqt/test_calender.py" beforeDir="false" afterPath="$PROJECT_DIR$/gui_test/test_pyqt/test_calender.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -36,7 +35,7 @@
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="settings.editor.selected.configurable" value="com.jetbrains.python.configuration.PyActiveSdkModuleConfigurable" />
   </component>
-  <component name="RunManager" selected="Python.test_calender">
+  <component name="RunManager" selected="Python.test_lab_lcd">
     <configuration name="test_calender" type="PythonConfigurationType" factoryName="Python" temporary="true">
       <module name="codewars" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -73,6 +72,28 @@
       <option name="ADD_SOURCE_ROOTS" value="true" />
       <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
       <option name="SCRIPT_NAME" value="$PROJECT_DIR$/gui_test/test_pyqt/test_dialog.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
+    <configuration name="test_lab_lcd" type="PythonConfigurationType" factoryName="Python" temporary="true">
+      <module name="codewars" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/gui_test/test_pyqt" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/gui_test/test_pyqt/test_lab_lcd.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
@@ -125,35 +146,13 @@
       <option name="INPUT_FILE" value="" />
       <method v="2" />
     </configuration>
-    <configuration name="test_slider" type="PythonConfigurationType" factoryName="Python" temporary="true">
-      <module name="codewars" />
-      <option name="INTERPRETER_OPTIONS" value="" />
-      <option name="PARENT_ENVS" value="true" />
-      <envs>
-        <env name="PYTHONUNBUFFERED" value="1" />
-      </envs>
-      <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/gui_test/test_pyqt" />
-      <option name="IS_MODULE_SDK" value="true" />
-      <option name="ADD_CONTENT_ROOTS" value="true" />
-      <option name="ADD_SOURCE_ROOTS" value="true" />
-      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/gui_test/test_pyqt/test_slider.py" />
-      <option name="PARAMETERS" value="" />
-      <option name="SHOW_COMMAND_LINE" value="false" />
-      <option name="EMULATE_TERMINAL" value="false" />
-      <option name="MODULE_MODE" value="false" />
-      <option name="REDIRECT_INPUT" value="false" />
-      <option name="INPUT_FILE" value="" />
-      <method v="2" />
-    </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Python.test_lab_lcd" />
         <item itemvalue="Python.test_calender" />
         <item itemvalue="Python.test_dialog" />
         <item itemvalue="Python.test_rubberband" />
         <item itemvalue="Python.test_otherscroller" />
-        <item itemvalue="Python.test_slider" />
       </list>
     </recent_temporary>
   </component>
@@ -216,7 +215,8 @@
       <workItem from="1581061092516" duration="9404000" />
       <workItem from="1581218762057" duration="5892000" />
       <workItem from="1581316071572" duration="10857000" />
-      <workItem from="1581397022505" duration="8935000" />
+      <workItem from="1581397022505" duration="9702000" />
+      <workItem from="1581485415909" duration="7408000" />
     </task>
     <servers />
   </component>
@@ -228,42 +228,53 @@
       <screen x="0" y="27" width="1680" height="1023" />
     </state>
     <state x="623" y="296" width="424" height="491" key="FileChooserDialogImpl/0.27.1680.1023@0.27.1680.1023" timestamp="1577975832259" />
-    <state width="1632" height="256" key="GridCell.Tab.0.bottom" timestamp="1581414076260">
+    <state width="1632" height="256" key="GridCell.Tab.0.bottom" timestamp="1581503938511">
       <screen x="0" y="27" width="1680" height="1023" />
     </state>
-    <state width="1632" height="256" key="GridCell.Tab.0.bottom/0.27.1680.1023@0.27.1680.1023" timestamp="1581414076260" />
-    <state width="1632" height="256" key="GridCell.Tab.0.center" timestamp="1581414076257">
+    <state width="1632" height="256" key="GridCell.Tab.0.bottom/0.27.1680.1023@0.27.1680.1023" timestamp="1581503938511" />
+    <state width="1632" height="256" key="GridCell.Tab.0.center" timestamp="1581503938505">
       <screen x="0" y="27" width="1680" height="1023" />
     </state>
-    <state width="1632" height="256" key="GridCell.Tab.0.center/0.27.1680.1023@0.27.1680.1023" timestamp="1581414076257" />
-    <state width="1632" height="256" key="GridCell.Tab.0.left" timestamp="1581414076255">
+    <state width="1632" height="256" key="GridCell.Tab.0.center/0.27.1680.1023@0.27.1680.1023" timestamp="1581503938505" />
+    <state width="1632" height="256" key="GridCell.Tab.0.left" timestamp="1581503938502">
       <screen x="0" y="27" width="1680" height="1023" />
     </state>
-    <state width="1632" height="256" key="GridCell.Tab.0.left/0.27.1680.1023@0.27.1680.1023" timestamp="1581414076255" />
-    <state width="1632" height="256" key="GridCell.Tab.0.right" timestamp="1581414076258">
+    <state width="1632" height="256" key="GridCell.Tab.0.left/0.27.1680.1023@0.27.1680.1023" timestamp="1581503938502" />
+    <state width="1632" height="256" key="GridCell.Tab.0.right" timestamp="1581503938509">
       <screen x="0" y="27" width="1680" height="1023" />
     </state>
-    <state width="1632" height="256" key="GridCell.Tab.0.right/0.27.1680.1023@0.27.1680.1023" timestamp="1581414076258" />
-    <state width="1632" height="316" key="GridCell.Tab.1.bottom" timestamp="1581409858588">
+    <state width="1632" height="256" key="GridCell.Tab.0.right/0.27.1680.1023@0.27.1680.1023" timestamp="1581503938509" />
+    <state width="1632" height="316" key="GridCell.Tab.1.bottom" timestamp="1581500799195">
       <screen x="0" y="27" width="1680" height="1023" />
     </state>
-    <state width="1632" height="316" key="GridCell.Tab.1.bottom/0.27.1680.1023@0.27.1680.1023" timestamp="1581409858588" />
-    <state width="1632" height="316" key="GridCell.Tab.1.center" timestamp="1581409858586">
+    <state width="1632" height="316" key="GridCell.Tab.1.bottom/0.27.1680.1023@0.27.1680.1023" timestamp="1581500799195" />
+    <state width="1632" height="316" key="GridCell.Tab.1.center" timestamp="1581500799192">
       <screen x="0" y="27" width="1680" height="1023" />
     </state>
-    <state width="1632" height="316" key="GridCell.Tab.1.center/0.27.1680.1023@0.27.1680.1023" timestamp="1581409858586" />
-    <state width="1632" height="316" key="GridCell.Tab.1.left" timestamp="1581409858585">
+    <state width="1632" height="316" key="GridCell.Tab.1.center/0.27.1680.1023@0.27.1680.1023" timestamp="1581500799192" />
+    <state width="1632" height="316" key="GridCell.Tab.1.left" timestamp="1581500799191">
       <screen x="0" y="27" width="1680" height="1023" />
     </state>
-    <state width="1632" height="316" key="GridCell.Tab.1.left/0.27.1680.1023@0.27.1680.1023" timestamp="1581409858585" />
-    <state width="1632" height="316" key="GridCell.Tab.1.right" timestamp="1581409858587">
+    <state width="1632" height="316" key="GridCell.Tab.1.left/0.27.1680.1023@0.27.1680.1023" timestamp="1581500799191" />
+    <state width="1632" height="316" key="GridCell.Tab.1.right" timestamp="1581500799193">
       <screen x="0" y="27" width="1680" height="1023" />
     </state>
-    <state width="1632" height="316" key="GridCell.Tab.1.right/0.27.1680.1023@0.27.1680.1023" timestamp="1581409858587" />
+    <state width="1632" height="316" key="GridCell.Tab.1.right/0.27.1680.1023@0.27.1680.1023" timestamp="1581500799193" />
     <state x="336" y="173" width="1007" height="737" key="SettingsEditor" timestamp="1578738476763">
       <screen x="0" y="27" width="1680" height="1023" />
     </state>
     <state x="336" y="173" width="1007" height="737" key="SettingsEditor/0.27.1680.1023@0.27.1680.1023" timestamp="1578738476763" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <default-breakpoints>
+        <breakpoint type="python-exception">
+          <properties notifyOnTerminate="true" exception="BaseException">
+            <option name="notifyOnTerminate" value="true" />
+          </properties>
+        </breakpoint>
+      </default-breakpoints>
+    </breakpoint-manager>
   </component>
   <component name="com.intellij.coverage.CoverageDataManagerImpl">
     <SUITE FILE_PATH="coverage/codewars$test_geometry.coverage" NAME="test_geometry Coverage Results" MODIFIED="1577114872454" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/gui_test/test_pyqt" />
@@ -293,6 +304,7 @@
     <SUITE FILE_PATH="coverage/codewars$drag_window.coverage" NAME="drag_window Coverage Results" MODIFIED="1577284189567" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/gui_test/test_pyqt" />
     <SUITE FILE_PATH="coverage/codewars$test_keyevent.coverage" NAME="test_keyevent Coverage Results" MODIFIED="1577284647121" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/gui_test/test_pyqt" />
     <SUITE FILE_PATH="coverage/codewars$test_validator.coverage" NAME="test_validator Coverage Results" MODIFIED="1578831088550" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/gui_test/test_pyqt" />
+    <SUITE FILE_PATH="coverage/codewars$test_lab_lcd.coverage" NAME="test_lab_lcd Coverage Results" MODIFIED="1581503938480" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/gui_test/test_pyqt" />
     <SUITE FILE_PATH="coverage/codewars$test_paintevent.coverage" NAME="test_paintevent Coverage Results" MODIFIED="1577609624180" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/gui_test/test_pyqt" />
     <SUITE FILE_PATH="coverage/codewars$test_menu.coverage" NAME="test_menu Coverage Results" MODIFIED="1578215193966" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/gui_test/test_pyqt" />
     <SUITE FILE_PATH="coverage/codewars$login_panel.coverage" NAME="login_panel Coverage Results" MODIFIED="1578577568296" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/gui_test/test_pyqt" />
