@@ -2,6 +2,13 @@ from PyQt5.QtWidgets import *
 from PyQt5.QtGui import *
 from PyQt5.QtCore import *
 
+class Label(QLabel):
+    def sizeHint(self):
+        return QSize(180, 180)
+
+    def minimumSizeHint(self):
+        return QSize(100, 180)
+
 class MyWindow(QWidget):
     def __init__(self):
         super(MyWindow, self).__init__()
@@ -9,7 +16,152 @@ class MyWindow(QWidget):
         self.resize(500, 500)
         # self.init_boxlayout_gui()
         # self.init_vhbox_gui()
-        self.init_form_gui()
+        # self.init_form_gui()
+        # self.init_grid_gui()
+        # self.init_stack_gui()
+        self.init_sizepolicy_gui()
+        self.labs = self.get_labs()
+        self.curpos = 0
+
+    def get_labs(self):
+        tmp_li = []
+        for child in self.children():
+            if child.__class__ == QLabel:
+                # print(child.__class__)
+                tmp_li.append(child)
+        return tmp_li
+
+    def init_sizepolicy_gui(self):
+        label1 = Label("标签1")
+        label1.setStyleSheet("background-color: cyan;")
+        label2 = QLabel("标签2")
+        label2.setStyleSheet("background-color: yellow;")
+        label3 = QLabel("标签3")
+        label3.setStyleSheet("background-color: red;")
+
+        layout = QVBoxLayout()
+        self.setLayout(layout)
+
+        layout.addWidget(label1)
+        layout.addWidget(label2)
+        layout.addWidget(label3)
+
+        # label1.setSizePolicy(QSizePolicy.Ignored, QSizePolicy.Ignored)
+        # label1.setSizePolicy(QSizePolicy.Fixed, QSizePolicy.Fixed)
+        # label1.setSizePolicy(QSizePolicy.Fixed, QSizePolicy.Expanding)
+        label1.setSizePolicy(QSizePolicy.Maximum, QSizePolicy.Minimum)
+
+        # sp = QSizePolicy(QSizePolicy.Fixed, QSizePolicy.Fixed)
+        # sp.setRetainSizeWhenHidden(True)
+        # label1.setSizePolicy(sp)
+
+        # label1.setFixedSize(200, 200)
+        # label2.setFixedSize(400, 100)
+        # label1.hide()
+
+
+    def init_stack_gui(self):
+        s_layout = QStackedLayout()
+        s_layout.currentChanged.connect(lambda val:print('current_index:',s_layout.widget(val).text()))
+        self.sl = s_layout
+        self.setLayout(s_layout)
+
+        label1 = QLabel("标签1")
+        label1.setStyleSheet("background-color: cyan;")
+        label2 = QLabel("标签2")
+        label2.setStyleSheet("background-color: yellow;")
+        label3 = QLabel("标签3")
+        label3.setStyleSheet("background-color: red;")
+        label4 = QLabel("标签4")
+        label4.setStyleSheet("background-color: orange;")
+
+        label5 = QLabel("标签5")
+        label5.setStyleSheet("background-color: pink;")
+        label6 = QLabel("标签6")
+        label6.setStyleSheet("background-color: blue;")
+        label7 = QLabel("标签7")
+        label7.setStyleSheet("background-color: cyan;")
+        v_layout = QVBoxLayout()
+        v_layout.addWidget(label5)
+        v_layout.addWidget(label6)
+        v_layout.addWidget(label7)
+
+        print(s_layout.addWidget(label1))
+        print(s_layout.addWidget(label2))
+        print(s_layout.addWidget(label3))
+
+        # s_layout.setStackingMode(QStackedLayout.StackAll)
+
+        label1.setFixedSize(100, 100)
+        label2.setFixedSize(150, 150)
+        # s_layout.removeWidget(label1)
+        # s_layout.removeWidget(label2)
+
+        print(s_layout.currentIndex())
+        s_layout.insertWidget(0,label4)
+        print(s_layout.currentIndex())
+        print(s_layout.currentWidget().text())
+        print(s_layout.widget(0).text())
+
+        timer = QTimer(self)
+        timer.timeout.connect(self.stack_change)
+        timer.start(1000)
+
+    def stack_change(self):
+        child = self.labs[self.curpos]
+        self.sl.setCurrentWidget(child)
+        self.curpos = (self.curpos + 1) % len(self.labs)
+        # self.sl.setCurrentIndex((self.sl.currentIndex()+1)%self.sl.count())
+
+    def init_grid_gui(self):
+        g_layout = QGridLayout()
+        self.setLayout(g_layout)
+
+        label1 = QLabel("标签1")
+        label1.setStyleSheet("background-color: cyan;")
+        label2 = QLabel("标签2")
+        label2.setStyleSheet("background-color: yellow;")
+        label3 = QLabel("标签3")
+        label3.setStyleSheet("background-color: red;")
+
+        label5 = QLabel("标签5")
+        label5.setStyleSheet("background-color: pink;")
+        label6 = QLabel("标签6")
+        label6.setStyleSheet("background-color: blue;")
+        label7 = QLabel("标签7")
+        label7.setStyleSheet("background-color: cyan;")
+        v_layout = QVBoxLayout()
+        # v_layout.setDirection(QBoxLayout.RightToLeft)
+        v_layout.addWidget(label5)
+        v_layout.addWidget(label6)
+        v_layout.addWidget(label7)
+
+        g_layout.addWidget(label1,0,0)
+        g_layout.addWidget(label2,0,2)
+        g_layout.addWidget(label3,1,0,3,3)
+        g_layout.addLayout(v_layout,4, 0, 1, 4)
+
+        # print(gl.getItemPosition(2))
+        print(g_layout.itemAtPosition(1, 0).widget().text())
+        print(g_layout.itemAtPosition(4, 0).layout())
+        # g_layout.setColumnMinimumWidth(0, 300)
+        # g_layout.setRowMinimumHeight(0, 300)
+
+        g_layout.setColumnStretch(0, 2)
+        g_layout.setColumnStretch(2, 1)
+        g_layout.setRowStretch(4,1)
+
+        # g_layout.setSpacing(30)
+        g_layout.setVerticalSpacing(50)
+        g_layout.setHorizontalSpacing(100)
+        print('spacing:',g_layout.spacing())
+        print('horizontalSpacing:',g_layout.horizontalSpacing())
+        print('verticalSpacing:',g_layout.verticalSpacing())
+
+        g_layout.setOriginCorner(Qt.BottomRightCorner)
+
+        print('rowCount:',g_layout.rowCount())
+        print('columnCount:',g_layout.columnCount())
 
     def init_form_gui(self):
         name_label = QLabel("姓名(&n):")
