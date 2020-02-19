@@ -1,0 +1,46 @@
+QWidget:!focus {
+    border: 2px dotted green;
+}
+
+QWidget:hover {
+    font-size: 16px;
+    background-color: lightgray;
+}
+
+QPushButton:hover {
+    border: 2px solid red;
+}
+
+QPushButton:pressed {
+    border: 2px dotted orange;
+}
+
+QCheckBox:checked, QCheckBox:hover {
+    background-color: red;
+}
+
+QCheckBox::indicator {
+    width: 40px;
+    height: 40px;
+}
+
+QCheckBox::indicator:on {
+    image: url(../images/add.png);
+}
+
+QCheckBox::indicator:indeterminate {
+    image: url(../images/addhover.png);
+}
+
+QCheckBox::indicator:off {
+    image: url(../images/rightdown.png);
+}
+
+QLabel[notice_level=warning] {
+    background-color: rgb(255,0,0);
+}
+
+#btn2 {
+    border:10px solid green;
+    border-top-width:2px;
+}

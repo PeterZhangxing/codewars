@@ -3,12 +3,25 @@
   <component name="ChangeListManager">
     <list default="true" id="18f01e30-48de-4bd8-a579-a58613e9120f" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/gui_test/test_pyqt/test_layout.py" beforeDir="false" afterPath="$PROJECT_DIR$/gui_test/test_pyqt/test_layout.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="DatabaseView">
+    <option name="SHOW_INTERMEDIATE" value="true" />
+    <option name="GROUP_DATA_SOURCES" value="true" />
+    <option name="GROUP_SCHEMA" value="true" />
+    <option name="GROUP_CONTENTS" value="false" />
+    <option name="SORT_POSITIONED" value="false" />
+    <option name="SHOW_EMPTY_GROUPS" value="false" />
+    <option name="AUTO_SCROLL_FROM_SOURCE" value="false" />
+    <option name="HIDDEN_KINDS">
+      <set />
+    </option>
+    <expand />
+    <select />
   </component>
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
@@ -34,10 +47,17 @@
     <property name="DefaultHtmlFileTemplate" value="HTML File" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="restartRequiresConfirmation" value="false" />
     <property name="settings.editor.selected.configurable" value="com.jetbrains.python.configuration.PyActiveSdkModuleConfigurable" />
   </component>
-  <component name="RunManager" selected="Python.test_layout">
-    <configuration name="test_calender" type="PythonConfigurationType" factoryName="Python" temporary="true">
+  <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/gui_test/test_pyqt/test_qss" />
+      <recent name="$PROJECT_DIR$/gui_test/test_pyqt/qss_test" />
+    </key>
+  </component>
+  <component name="RunManager" selected="Python.test_subcontrol">
+    <configuration name="learning_qss (1)" type="PythonConfigurationType" factoryName="Python" temporary="true">
       <module name="codewars" />
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
@@ -45,12 +65,12 @@
         <env name="PYTHONUNBUFFERED" value="1" />
       </envs>
       <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/gui_test/test_pyqt" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/gui_test/test_pyqt/qss_test" />
       <option name="IS_MODULE_SDK" value="true" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
       <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/gui_test/test_pyqt/test_calender.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/gui_test/test_pyqt/qss_test/learning_qss.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
@@ -59,7 +79,7 @@
       <option name="INPUT_FILE" value="" />
       <method v="2" />
     </configuration>
-    <configuration name="test_dialog" type="PythonConfigurationType" factoryName="Python" temporary="true">
+    <configuration name="learning_qss" type="PythonConfigurationType" factoryName="Python" temporary="true">
       <module name="codewars" />
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
@@ -67,12 +87,12 @@
         <env name="PYTHONUNBUFFERED" value="1" />
       </envs>
       <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/gui_test/test_pyqt" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/gui_test/test_pyqt/qss_test" />
       <option name="IS_MODULE_SDK" value="true" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
       <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/gui_test/test_pyqt/test_dialog.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/gui_test/test_pyqt/test_qss/learning_qss.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
@@ -81,7 +101,7 @@
       <option name="INPUT_FILE" value="" />
       <method v="2" />
     </configuration>
-    <configuration name="test_lab_lcd" type="PythonConfigurationType" factoryName="Python" temporary="true">
+    <configuration name="set_backgroud" type="PythonConfigurationType" factoryName="Python" temporary="true">
       <module name="codewars" />
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
@@ -89,12 +109,12 @@
         <env name="PYTHONUNBUFFERED" value="1" />
       </envs>
       <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/gui_test/test_pyqt" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/gui_test/test_pyqt/qss_test" />
       <option name="IS_MODULE_SDK" value="true" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
       <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/gui_test/test_pyqt/test_lab_lcd.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/gui_test/test_pyqt/qss_test/set_backgroud.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
@@ -125,7 +145,7 @@
       <option name="INPUT_FILE" value="" />
       <method v="2" />
     </configuration>
-    <configuration name="test_mess" type="PythonConfigurationType" factoryName="Python" temporary="true">
+    <configuration name="test_subcontrol" type="PythonConfigurationType" factoryName="Python" temporary="true">
       <module name="codewars" />
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
@@ -133,12 +153,12 @@
         <env name="PYTHONUNBUFFERED" value="1" />
       </envs>
       <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/gui_test/test_pyqt" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/gui_test/test_pyqt/qss_test" />
       <option name="IS_MODULE_SDK" value="true" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
       <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/gui_test/test_pyqt/test_mess.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/gui_test/test_pyqt/qss_test/test_subcontrol.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
@@ -149,11 +169,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Python.test_subcontrol" />
+        <item itemvalue="Python.set_backgroud" />
+        <item itemvalue="Python.learning_qss (1)" />
+        <item itemvalue="Python.learning_qss" />
         <item itemvalue="Python.test_layout" />
-        <item itemvalue="Python.test_mess" />
-        <item itemvalue="Python.test_lab_lcd" />
-        <item itemvalue="Python.test_calender" />
-        <item itemvalue="Python.test_dialog" />
       </list>
     </recent_temporary>
   </component>
@@ -221,7 +241,10 @@
       <workItem from="1581568046572" duration="9608000" />
       <workItem from="1581764806694" duration="4181000" />
       <workItem from="1581825264739" duration="7942000" />
-      <workItem from="1581916430584" duration="6893000" />
+      <workItem from="1581916430584" duration="7601000" />
+      <workItem from="1581996906746" duration="5797000" />
+      <workItem from="1582017132828" duration="2020000" />
+      <workItem from="1582083946769" duration="6580000" />
     </task>
     <servers />
   </component>
@@ -233,38 +256,38 @@
       <screen x="0" y="27" width="1680" height="1023" />
     </state>
     <state x="623" y="296" width="424" height="491" key="FileChooserDialogImpl/0.27.1680.1023@0.27.1680.1023" timestamp="1577975832259" />
-    <state width="1632" height="264" key="GridCell.Tab.0.bottom" timestamp="1581930824419">
+    <state width="1632" height="264" key="GridCell.Tab.0.bottom" timestamp="1582104412491">
       <screen x="0" y="27" width="1680" height="1023" />
     </state>
-    <state width="1632" height="264" key="GridCell.Tab.0.bottom/0.27.1680.1023@0.27.1680.1023" timestamp="1581930824419" />
-    <state width="1632" height="264" key="GridCell.Tab.0.center" timestamp="1581930824417">
+    <state width="1632" height="264" key="GridCell.Tab.0.bottom/0.27.1680.1023@0.27.1680.1023" timestamp="1582104412491" />
+    <state width="1632" height="264" key="GridCell.Tab.0.center" timestamp="1582104412486">
       <screen x="0" y="27" width="1680" height="1023" />
     </state>
-    <state width="1632" height="264" key="GridCell.Tab.0.center/0.27.1680.1023@0.27.1680.1023" timestamp="1581930824417" />
-    <state width="1632" height="264" key="GridCell.Tab.0.left" timestamp="1581930824416">
+    <state width="1632" height="264" key="GridCell.Tab.0.center/0.27.1680.1023@0.27.1680.1023" timestamp="1582104412486" />
+    <state width="1632" height="264" key="GridCell.Tab.0.left" timestamp="1582104412483">
       <screen x="0" y="27" width="1680" height="1023" />
     </state>
-    <state width="1632" height="264" key="GridCell.Tab.0.left/0.27.1680.1023@0.27.1680.1023" timestamp="1581930824416" />
-    <state width="1632" height="264" key="GridCell.Tab.0.right" timestamp="1581930824418">
+    <state width="1632" height="264" key="GridCell.Tab.0.left/0.27.1680.1023@0.27.1680.1023" timestamp="1582104412483" />
+    <state width="1632" height="264" key="GridCell.Tab.0.right" timestamp="1582104412488">
       <screen x="0" y="27" width="1680" height="1023" />
     </state>
-    <state width="1632" height="264" key="GridCell.Tab.0.right/0.27.1680.1023@0.27.1680.1023" timestamp="1581930824418" />
-    <state width="1632" height="316" key="GridCell.Tab.1.bottom" timestamp="1581500799195">
+    <state width="1632" height="264" key="GridCell.Tab.0.right/0.27.1680.1023@0.27.1680.1023" timestamp="1582104412488" />
+    <state width="1632" height="326" key="GridCell.Tab.1.bottom" timestamp="1582017105669">
       <screen x="0" y="27" width="1680" height="1023" />
     </state>
-    <state width="1632" height="316" key="GridCell.Tab.1.bottom/0.27.1680.1023@0.27.1680.1023" timestamp="1581500799195" />
-    <state width="1632" height="316" key="GridCell.Tab.1.center" timestamp="1581500799192">
+    <state width="1632" height="326" key="GridCell.Tab.1.bottom/0.27.1680.1023@0.27.1680.1023" timestamp="1582017105669" />
+    <state width="1632" height="326" key="GridCell.Tab.1.center" timestamp="1582017105667">
       <screen x="0" y="27" width="1680" height="1023" />
     </state>
-    <state width="1632" height="316" key="GridCell.Tab.1.center/0.27.1680.1023@0.27.1680.1023" timestamp="1581500799192" />
-    <state width="1632" height="316" key="GridCell.Tab.1.left" timestamp="1581500799191">
+    <state width="1632" height="326" key="GridCell.Tab.1.center/0.27.1680.1023@0.27.1680.1023" timestamp="1582017105667" />
+    <state width="1632" height="326" key="GridCell.Tab.1.left" timestamp="1582017105667">
       <screen x="0" y="27" width="1680" height="1023" />
     </state>
-    <state width="1632" height="316" key="GridCell.Tab.1.left/0.27.1680.1023@0.27.1680.1023" timestamp="1581500799191" />
-    <state width="1632" height="316" key="GridCell.Tab.1.right" timestamp="1581500799193">
+    <state width="1632" height="326" key="GridCell.Tab.1.left/0.27.1680.1023@0.27.1680.1023" timestamp="1582017105667" />
+    <state width="1632" height="326" key="GridCell.Tab.1.right" timestamp="1582017105668">
       <screen x="0" y="27" width="1680" height="1023" />
     </state>
-    <state width="1632" height="316" key="GridCell.Tab.1.right/0.27.1680.1023@0.27.1680.1023" timestamp="1581500799193" />
+    <state width="1632" height="326" key="GridCell.Tab.1.right/0.27.1680.1023@0.27.1680.1023" timestamp="1582017105668" />
     <state x="336" y="173" width="1007" height="737" key="SettingsEditor" timestamp="1578738476763">
       <screen x="0" y="27" width="1680" height="1023" />
     </state>
@@ -288,8 +311,9 @@
   <component name="com.intellij.coverage.CoverageDataManagerImpl">
     <SUITE FILE_PATH="coverage/codewars$test_geometry.coverage" NAME="test_geometry Coverage Results" MODIFIED="1577114872454" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/gui_test/test_pyqt" />
     <SUITE FILE_PATH="coverage/codewars$myserver.coverage" NAME="myserver Coverage Results" MODIFIED="1578834587110" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/test_flask/firt_flask" />
+    <SUITE FILE_PATH="coverage/codewars$set_backgroud.coverage" NAME="set_backgroud Coverage Results" MODIFIED="1582103301341" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/gui_test/test_pyqt/qss_test" />
     <SUITE FILE_PATH="coverage/codewars$test_textarea.coverage" NAME="test_textarea Coverage Results" MODIFIED="1580452674000" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/gui_test/test_pyqt" />
-    <SUITE FILE_PATH="coverage/codewars$test_layout.coverage" NAME="test_layout Coverage Results" MODIFIED="1581930824396" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/gui_test/test_pyqt" />
+    <SUITE FILE_PATH="coverage/codewars$test_layout.coverage" NAME="test_layout Coverage Results" MODIFIED="1582016365502" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/gui_test/test_pyqt" />
     <SUITE FILE_PATH="coverage/codewars$test_fontbox.coverage" NAME="test_fontbox Coverage Results" MODIFIED="1581066564981" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/gui_test/test_pyqt" />
     <SUITE FILE_PATH="coverage/codewars$test_absbtn.coverage" NAME="test_absbtn Coverage Results" MODIFIED="1577717898626" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/gui_test/test_pyqt" />
     <SUITE FILE_PATH="coverage/codewars$test_abspinbox.coverage" NAME="test_abspinbox Coverage Results" MODIFIED="1580634698615" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/gui_test/test_pyqt" />
@@ -303,6 +327,7 @@
     <SUITE FILE_PATH="coverage/codewars$test_spinbox.coverage" NAME="test_spinbox Coverage Results" MODIFIED="1580721247303" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/gui_test/test_pyqt" />
     <SUITE FILE_PATH="coverage/codewars$test_focus.coverage" NAME="test_focus Coverage Results" MODIFIED="1577610658034" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/gui_test/test_pyqt" />
     <SUITE FILE_PATH="coverage/codewars$test_dte.coverage" NAME="test_dte Coverage Results" MODIFIED="1580890444842" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/gui_test/test_pyqt" />
+    <SUITE FILE_PATH="coverage/codewars$learning_qss.coverage" NAME="learning_qss Coverage Results" MODIFIED="1582016858286" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/gui_test/test_pyqt/qss_test" />
     <SUITE FILE_PATH="coverage/codewars$test_mess.coverage" NAME="test_mess Coverage Results" MODIFIED="1581587216482" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/gui_test/test_pyqt" />
     <SUITE FILE_PATH="coverage/codewars$f_slot_signal.coverage" NAME="f_slot_signal Coverage Results" MODIFIED="1576767598752" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/gui_test/test_pyqt" />
     <SUITE FILE_PATH="coverage/codewars$test_dspinbox.coverage" NAME="test_dspinbox Coverage Results" MODIFIED="1580887170052" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/gui_test/test_pyqt" />
@@ -319,11 +344,13 @@
     <SUITE FILE_PATH="coverage/codewars$test_paintevent.coverage" NAME="test_paintevent Coverage Results" MODIFIED="1577609624180" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/gui_test/test_pyqt" />
     <SUITE FILE_PATH="coverage/codewars$test_menu.coverage" NAME="test_menu Coverage Results" MODIFIED="1578215193966" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/gui_test/test_pyqt" />
     <SUITE FILE_PATH="coverage/codewars$login_panel.coverage" NAME="login_panel Coverage Results" MODIFIED="1578577568296" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/gui_test/test_pyqt" />
+    <SUITE FILE_PATH="coverage/codewars$learning_qss__1_.coverage" NAME="learning_qss (1) Coverage Results" MODIFIED="1582018537164" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/gui_test/test_pyqt/qss_test" />
     <SUITE FILE_PATH="coverage/codewars$test_keyseq.coverage" NAME="test_keyseq Coverage Results" MODIFIED="1580632983657" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/gui_test/test_pyqt" />
     <SUITE FILE_PATH="coverage/codewars$test_rubberband.coverage" NAME="test_rubberband Coverage Results" MODIFIED="1581325590231" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/gui_test/test_pyqt" />
     <SUITE FILE_PATH="coverage/codewars$test_slider.coverage" NAME="test_slider Coverage Results" MODIFIED="1581071756294" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/gui_test/test_pyqt" />
     <SUITE FILE_PATH="coverage/codewars$test_timer.coverage" NAME="test_timer Coverage Results" MODIFIED="1577008067769" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/gui_test/test_pyqt" />
     <SUITE FILE_PATH="coverage/codewars$test_alipay.coverage" NAME="test_alipay Coverage Results" MODIFIED="1577628061143" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/payment_types_test" />
+    <SUITE FILE_PATH="coverage/codewars$test_subcontrol.coverage" NAME="test_subcontrol Coverage Results" MODIFIED="1582104412461" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/gui_test/test_pyqt/qss_test" />
     <SUITE FILE_PATH="coverage/codewars$test_dialog.coverage" NAME="test_dialog Coverage Results" MODIFIED="1581411577365" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/gui_test/test_pyqt" />
     <SUITE FILE_PATH="coverage/codewars$combox_example.coverage" NAME="combox_example Coverage Results" MODIFIED="1581064931306" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/gui_test/test_pyqt" />
   </component>
