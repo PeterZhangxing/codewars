@@ -1,0 +1,158 @@
+QPushButton{
+    color: qlineargradient(x1:0, y1:0, x2:1, y2:1,stop:0 white, stop: 0.4 red, stop:1 black);
+    border:2px solid red;
+    border-top-left-radius:50%;
+    border-top-right-radius:50%;
+    border-bottom-left-radius:10px;
+    border-bottom-right-radius:10px
+}
+QPushButton:hover{
+    color: qlineargradient(x1:0, y1:0, x2:1, y2:1,stop:0 white, stop: 0.4 green, stop:1 black);
+    border:5px dotted green;
+    border-top-left-radius:50%;
+    border-top-right-radius:50%;
+    border-bottom-left-radius:10px;
+    border-bottom-right-radius:10px
+}
+QPushButton:pressed{
+    font-size: 26px;
+    border:10px double orange;
+    border-radius: 30px;
+    border-top-right-radius:4px
+}
+
+QRadioButton {
+    padding-left: 5px;
+    spacing: 10px;
+    color: red;
+    font-size: 16px;
+    border: 1px double red;
+    border-radius: 40px;
+}
+QRadioButton::indicator {
+    width: 65px;
+    height: 60px;
+}
+QRadioButton::indicator:unchecked {
+    image: url(../images/source/close_pic.png);
+}
+QRadioButton::indicator:checked {
+    image: url(../images/source/open_pic.png);
+}
+
+QLineEdit {
+    border: 6px solid rgb(41, 57, 85);
+    border-radius: 10px;
+    background: white;
+    selection-background-color: green;
+    selection-color: red;
+    font-size: 14px ;
+}
+QLineEdit[echoMode="2"] {
+    lineedit-password-character: 65;
+}
+QLineEdit[readOnly="true"] {
+    background-color: gray;
+}
+QLineEdit:hover {
+    border: 1px solid blue;
+}
+
+QTextEdit {
+    border-radius: 20px;
+    padding-top: 30px;
+    padding-left: 80px;
+    border-image: url(../images/source/input_back.jpg);
+    selection-background-color: green;
+    font-size: 14px ;
+}
+
+QSpinBox {
+    padding-left: 10px;
+    padding-right: 10px;
+    border:2px solid green;
+    border-radius: 20px;
+}
+QSpinBox::up-button {
+    width: 50px;
+    height: 50px;
+    subcontrol-origin: padding;
+    subcontrol-position: left center;
+    left: 2px;
+    image: url(../images/source/up.png);
+}
+QSpinBox::up-button:hover {
+    bottom: 5px;
+}
+QSpinBox::down-button {
+    width: 50px;
+    height: 50px;
+    subcontrol-origin: margin;
+    subcontrol-position: right center;
+    right: 6px;
+    border-image: url(../images/source/down.png);
+}
+QSpinBox::down-button:hover {
+    top: 5px;
+}
+
+QComboBox {
+        color:red;
+        selection-background-color: orange;
+        min-height: 40px;
+        min-width: 80px;
+}
+QComboBox QAbstractItemView {
+        selection-color: white;
+        selection-background-color: green;
+        background-color: orange;
+}
+QComboBox QAbstractItemView::item {
+        color: blue;
+}
+QComboBox::drop-down {
+        subcontrol-origin: padding;
+        subcontrol-position: left center;
+        width: 60px;
+        background-color: cyan;
+}
+QComboBox::down-arrow {
+        image: url(../images/source/down.png);
+        width: 20px;
+        height: 20px;
+}
+
+QSlider::groove:Horizontal{
+        background:white;
+        border: 2px solid red;
+        height:160px;
+        padding-left: -15px;
+        padding-right: -15px;
+}
+QSlider::handle:Horizontal{
+        image: url(../images/source/hk.png);
+        height: 16px;
+        width: 30px;
+}
+QSlider::add-page:Horizontal{
+        background-color: gray;
+        height:1px;
+}
+QSlider::sub-page:Horizontal{
+        background-color:qlineargradient(x1:0, y1:0, x2:0.5, y2:0, x3:1, y3:0, stop:0 cyan, stop:0.5 green,stop:1 blue);
+        height:1px;
+}
+
+QProgressBar {
+       border: 2px solid black;
+       border-radius: 5px;
+       text-align: center;
+       color: blue;
+       font-size: 20px;
+       background-color: lightgray;
+}
+QProgressBar::chunk {
+       background-color: green;
+       width: 10px;
+       margin: 1px;
+}
