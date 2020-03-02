@@ -1,0 +1,18 @@
+<RCC>
+  <qresource prefix="registerpanel">
+    <file>images/code.png</file>
+    <file>images/desktop.png</file>
+    <file>images/python.jpg</file>
+    <file>images/screen1.jpg</file>
+    <file>images/screen2.jpg</file>
+  </qresource>
+  <qresource prefix="loginpanel">
+    <file>images/down3.png</file>
+    <file>images/login_btn_icon.png</file>
+    <file>images/login_combobox_icon.png</file>
+    <file>images/login_item_icon1.jpg</file>
+    <file>images/login_item_icon2.jpg</file>
+    <file>images/login_qrcode.png</file>
+    <file>images/login_top_bg.gif</file>
+  </qresource>
+</RCC>
